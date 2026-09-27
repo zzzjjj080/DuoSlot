@@ -15,7 +15,7 @@ public final class SwiftPMXCTestObserver: NSObject {
 
 extension SwiftPMXCTestObserver: XCTestObservation {
     var testOutputPath: String {
-        return "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/testOutput.txt"
+        return "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/testOutput.txt"
     }
 
     private func write(record: any Encodable) {

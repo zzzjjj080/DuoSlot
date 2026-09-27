@@ -1,12 +1,12 @@
 {
   "": {
-    "swift-dependencies": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/primary.swiftdeps"
+    "swift-dependencies": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/primary.swiftdeps"
   },
-  "/Users/jin/Claude/SplitProto/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift": {
-    "dependencies": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.d",
-    "object": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o",
-    "swiftmodule": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests~partial.swiftmodule",
-    "swift-dependencies": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swiftdeps",
-    "diagnostics": "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.dia"
+  "/Users/jin/Claude/DuoSlot/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift": {
+    "dependencies": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.d",
+    "object": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o",
+    "swiftmodule": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swiftdeps",
+    "diagnostics": "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.dia"
   }
 }

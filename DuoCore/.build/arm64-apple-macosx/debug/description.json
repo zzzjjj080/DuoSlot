@@ -1,8 +1,8 @@
 {
   "builtTestProducts" : [
     {
-      "binaryPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.xctest/Contents/MacOS/DuoCorePackageTests",
-      "packagePath" : "/Users/jin/Claude/SplitProto/DuoCore",
+      "binaryPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.xctest/Contents/MacOS/DuoCorePackageTests",
+      "packagePath" : "/Users/jin/Claude/DuoSlot/DuoCore",
       "productName" : "DuoCorePackageTests"
     }
   ],
@@ -23,42 +23,42 @@
   "swiftCommands" : {
     "C.DuoCore-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources",
-      "importPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources",
+      "importPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Battery.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Battery.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/NextEvent.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/NextEvent.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Slot.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Slot.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Steps.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Steps.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "DuoCore",
-      "moduleOutputPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule",
+      "moduleOutputPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule",
       "objects" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -67,7 +67,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-j10",
@@ -75,12 +75,12 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h",
         "-swift-version",
         "6",
         "-plugin-path",
@@ -109,66 +109,66 @@
         "-package-name",
         "duocore"
       ],
-      "outputFileMapPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Battery.swift",
-        "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/NextEvent.swift",
-        "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Slot.swift",
-        "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Steps.swift"
+        "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Battery.swift",
+        "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/NextEvent.swift",
+        "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Slot.swift",
+        "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Steps.swift"
       ],
-      "tempsPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build",
+      "tempsPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build",
       "wholeModuleOptimization" : false
     },
     "C.DuoCorePackageTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources",
-      "importPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources",
+      "importPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "DuoCorePackageTests",
-      "moduleOutputPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCorePackageTests.swiftmodule",
+      "moduleOutputPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCorePackageTests.swiftmodule",
       "objects" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -177,7 +177,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-Xfrontend",
@@ -187,12 +187,12 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-emit-objc-header",
         "-emit-objc-header-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/include/DuoCorePackageTests-Swift.h",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/include/DuoCorePackageTests-Swift.h",
         "-plugin-path",
         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
         "-sdk",
@@ -219,51 +219,51 @@
         "-package-name",
         "duocore"
       ],
-      "outputFileMapPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCorePackageTests.swiftmodule"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCorePackageTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
       ],
-      "tempsPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build",
+      "tempsPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build",
       "wholeModuleOptimization" : false
     },
     "C.DuoCoreTests-arm64-apple-macosx-debug.module" : {
       "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
-      "fileList" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources",
-      "importPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "fileList" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources",
+      "importPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "inputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCore.swiftmodule"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources"
         }
       ],
       "isLibrary" : true,
       "moduleName" : "DuoCoreTests",
-      "moduleOutputPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule",
+      "moduleOutputPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule",
       "objects" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
       ],
       "otherArguments" : [
         "-target",
@@ -272,7 +272,7 @@
         "-enable-batch-mode",
         "-serialize-diagnostics",
         "-index-store-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
         "-Onone",
         "-enable-testing",
         "-Xfrontend",
@@ -282,7 +282,7 @@
         "-DDEBUG",
         "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
         "-module-cache-path",
-        "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+        "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
         "-swift-version",
@@ -313,22 +313,22 @@
         "-package-name",
         "duocore"
       ],
-      "outputFileMapPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/output-file-map.json",
+      "outputFileMapPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/output-file-map.json",
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules/DuoCoreTests.swiftmodule"
         }
       ],
       "prepareForIndexing" : false,
       "sources" : [
-        "/Users/jin/Claude/SplitProto/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
+        "/Users/jin/Claude/DuoSlot/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
       ],
-      "tempsPath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build",
+      "tempsPath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build",
       "wholeModuleOptimization" : false
     }
   },
@@ -343,19 +343,19 @@
       "-package-name",
       "duocore",
       "-c",
-      "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Battery.swift",
-      "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/NextEvent.swift",
-      "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Slot.swift",
-      "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Steps.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Battery.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/NextEvent.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Slot.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Steps.swift",
       "-I",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-j10",
@@ -363,12 +363,12 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h",
       "-swift-version",
       "6",
       "-plugin-path",
@@ -406,16 +406,16 @@
       "-package-name",
       "duocore",
       "-c",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift",
       "-I",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-Xfrontend",
@@ -425,12 +425,12 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-emit-objc-header",
       "-emit-objc-header-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/include/DuoCorePackageTests-Swift.h",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/include/DuoCorePackageTests-Swift.h",
       "-plugin-path",
       "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
       "-sdk",
@@ -466,16 +466,16 @@
       "-package-name",
       "duocore",
       "-c",
-      "/Users/jin/Claude/SplitProto/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift",
+      "/Users/jin/Claude/DuoSlot/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift",
       "-I",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/Modules",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/Modules",
       "-target",
       "arm64-apple-macosx14.0",
       "-incremental",
       "-enable-batch-mode",
       "-serialize-diagnostics",
       "-index-store-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/index/store",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/index/store",
       "-Onone",
       "-enable-testing",
       "-Xfrontend",
@@ -485,7 +485,7 @@
       "-DDEBUG",
       "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
       "-module-cache-path",
-      "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
+      "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/ModuleCache",
       "-parseable-output",
       "-parse-as-library",
       "-swift-version",
@@ -535,14 +535,14 @@
 
   },
   "testEntryPointCommands" : {
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift" : {
       "inputs" : [
 
       ],
       "outputs" : [
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
         }
       ]
     }
@@ -553,7 +553,7 @@
     }
   },
   "writeCommands" : {
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -562,24 +562,24 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Battery.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Battery.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/NextEvent.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/NextEvent.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Slot.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Slot.swift"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Sources/DuoCore/Steps.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Sources/DuoCore/Steps.swift"
         }
       ],
-      "outputFilePath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources"
+      "outputFilePath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/sources"
     },
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -588,12 +588,12 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.derived/runner.swift"
         }
       ],
-      "outputFilePath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources"
+      "outputFilePath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/sources"
     },
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.product/Objects.LinkFileList" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.product/Objects.LinkFileList" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -602,32 +602,32 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Battery.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/NextEvent.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Slot.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/Steps.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.build/runner.swift.o"
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/DuoCoreTests.swift.o"
         }
       ],
-      "outputFilePath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.product/Objects.LinkFileList"
+      "outputFilePath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCorePackageTests.product/Objects.LinkFileList"
     },
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources" : {
       "alwaysOutOfDate" : false,
       "inputs" : [
         {
@@ -636,12 +636,12 @@
         },
         {
           "kind" : "file",
-          "name" : "/Users/jin/Claude/SplitProto/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
+          "name" : "/Users/jin/Claude/DuoSlot/DuoCore/Tests/DuoCoreTests/DuoCoreTests.swift"
         }
       ],
-      "outputFilePath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources"
+      "outputFilePath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCoreTests.build/sources"
     },
-    "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+    "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
       "alwaysOutOfDate" : true,
       "inputs" : [
         {
@@ -653,7 +653,7 @@
           "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
         }
       ],
-      "outputFilePath" : "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+      "outputFilePath" : "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
     }
   }
 }

@@ -1,3 +1,3 @@
 module DuoCore {
-    header "/Users/jin/Claude/SplitProto/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h"
+    header "/Users/jin/Claude/DuoSlot/DuoCore/.build/arm64-apple-macosx/debug/DuoCore.build/include/DuoCore-Swift.h"
 }
