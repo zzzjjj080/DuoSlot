@@ -14,6 +14,8 @@ struct RootView: View {
     @State private var snapshot = Snapshot(battery: BatteryReading(level: nil, charging: false), steps: nil, events: nil)
     @State private var path: [Slot] = []
     @State private var lastShown: String?
+    @State private var showTip = false
+    @State private var tipJar = TipJar(productID: TipJar.duoSlot)
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -27,10 +29,14 @@ struct RootView: View {
                 ForEach(Slot.allCases) { slot in
                     NavigationLink(value: slot) { Label(slot.title, systemImage: slot.symbol) }
                 }
-                Text(Stamp.text).font(.system(size: 10)).foregroundStyle(.secondary)
+                Button { showTip = true } label: {
+                    Label("コーヒーを奢る", systemImage: "heart")
+                }
+                Text(verbatim: Stamp.text).font(.system(size: 10)).foregroundStyle(.secondary)
             }
-            .navigationTitle("Duo Slot")
+            .navigationTitle(Text(verbatim: "Duo Slot"))
             .navigationDestination(for: Slot.self) { DetailView(slot: $0, snapshot: snapshot) }
+            .sheet(isPresented: $showTip) { TipView(tipJar: tipJar) { showTip = false } }
         }
         .task { await firstLaunch() }
         .onOpenURL { url in
@@ -70,7 +76,7 @@ struct DetailView: View {
             VStack(alignment: .leading, spacing: 8) {
                 switch slot {
                 case .battery:
-                    Label(snapshot.battery.charging ? "充電中" : "電池", systemImage: snapshot.battery.symbol)
+                    Label(snapshot.battery.charging ? String(localized: "充電中") : Slot.battery.title, systemImage: snapshot.battery.symbol)
                     Text(snapshot.battery.percentText).font(.system(size: 44, weight: .semibold, design: .rounded))
                 case .steps:
                     Label("今日の歩数", systemImage: "figure.walk")
@@ -83,8 +89,8 @@ struct DetailView: View {
                         ForEach(Array(upcoming.prefix(8).enumerated()), id: \.offset) { _, e in
                             let d = NextEvent.display([e], now: .now)
                             VStack(alignment: .leading) {
-                                Text(d.when).font(.caption).foregroundStyle(.cyan)
-                                Text(d.title).font(.headline)
+                                Text(d.whenText ?? "").font(.caption).foregroundStyle(.cyan)
+                                Text(d.titleText).font(.headline)
                             }
                         }
                     } else {

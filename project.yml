@@ -1,6 +1,7 @@
 name: DuoSlot
 options:
   bundleIdPrefix: com.zzzjjj080
+  developmentLanguage: en
   deploymentTarget:
     iOS: "18.0"
     watchOS: "11.0"
@@ -19,7 +20,7 @@ targets:
   DuoSlot:
     type: application
     platform: iOS
-    sources: [Phone]
+    sources: [Phone, Tip]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot
@@ -31,13 +32,14 @@ targets:
         SPBuildStamp: $(SP_BUILD_STAMP)
         CFBundleDisplayName: Duo Slot
         UILaunchScreen: {}
+        CFBundleDevelopmentRegion: en
         ITSAppUsesNonExemptEncryption: false
     dependencies:
       - target: DuoSlotWatch
   DuoSlotWatch:
     type: application
     platform: watchOS
-    sources: [WatchApp, Shared]
+    sources: [WatchApp, Shared, Tip]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot.watchkitapp

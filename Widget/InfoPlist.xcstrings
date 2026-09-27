@@ -1,0 +1,309 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSHealthShareUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reads today’s steps, including those counted by iPhone, to show the same total as the Health app on your watch face."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "读取今日步数（包括 iPhone 计的步数），在表盘上显示与“健康”相同的总数。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讀取今日步數（包括 iPhone 計算的步數），在錶面上顯示與「健康」相同的總數。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone에서 센 걸음을 포함한 오늘 걸음 수를 읽어 건강 앱과 같은 합계를 워치 페이스에 표시합니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lee los pasos de hoy, incluidos los del iPhone, para mostrar en la esfera el mismo total que Salud."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lit les pas du jour, y compris ceux de l’iPhone, pour afficher sur le cadran le même total que Santé."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liest die heutigen Schritte inkl. iPhone, um auf dem Zifferblatt dieselbe Summe wie Health anzuzeigen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legge i passi di oggi, inclusi quelli dell’iPhone, per mostrare sul quadrante lo stesso totale di Salute."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lê os passos de hoje, incluindo os do iPhone, para mostrar no mostrador o mesmo total do Saúde."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читает сегодняшние шаги, включая шаги iPhone, чтобы показывать на циферблате тот же итог, что и «Здоровье»."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقرأ خطوات اليوم، بما فيها خطوات iPhone، لعرض نفس إجمالي تطبيق الصحة على واجهة الساعة."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leest de stappen van vandaag, ook die van je iPhone, om hetzelfde totaal als Gezondheid op je wijzerplaat te tonen."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läser dagens steg, även de från iPhone, för att visa samma summa som Hälsa på urtavlan."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kadranda Sağlık ile aynı toplamı göstermek için iPhone'un saydıkları dahil bugünkü adımları okur."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membaca langkah hari ini, termasuk dari iPhone, untuk menampilkan total yang sama dengan Kesehatan di tampilan jam."
+          }
+        }
+      }
+    },
+    "NSMotionUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reads the Apple Watch pedometer to show today’s steps on your watch face."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "读取 Apple Watch 计步器，在表盘上显示今日步数。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讀取 Apple Watch 計步器，在錶面上顯示今日步數。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "워치 페이스에 오늘 걸음 수를 표시하기 위해 Apple Watch 만보계를 읽습니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lee el podómetro del Apple Watch para mostrar los pasos de hoy en la esfera."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lit le podomètre de l’Apple Watch pour afficher les pas du jour sur le cadran."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liest den Schrittzähler der Apple Watch, um die heutigen Schritte auf dem Zifferblatt anzuzeigen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legge il contapassi di Apple Watch per mostrare i passi di oggi sul quadrante."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lê o pedômetro do Apple Watch para mostrar os passos de hoje no mostrador."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читает шагомер Apple Watch, чтобы показывать сегодняшние шаги на циферблате."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقرأ عداد خطوات Apple Watch لعرض خطوات اليوم على واجهة الساعة."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leest de stappenteller van je Apple Watch om de stappen van vandaag op je wijzerplaat te tonen."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läser Apple Watch stegräknare för att visa dagens steg på urtavlan."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bugünkü adımları kadranda göstermek için Apple Watch adımsayarını okur."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membaca pedometer Apple Watch untuk menampilkan langkah hari ini di tampilan jam."
+          }
+        }
+      }
+    },
+    "NSCalendarsFullAccessUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次の予定を文字盤に出すために、カレンダーを読みます。"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reads your calendar to show your next event on your watch face."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "读取日历，在表盘上显示下一个日程。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讀取行事曆，在錶面上顯示下一個行程。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "워치 페이스에 다음 일정을 표시하기 위해 캘린더를 읽습니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lee tu calendario para mostrar tu próximo evento en la esfera."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lit votre calendrier pour afficher votre prochain événement sur le cadran."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liest deinen Kalender, um deinen nächsten Termin auf dem Zifferblatt anzuzeigen."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legge il calendario per mostrare il prossimo evento sul quadrante."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lê seu calendário para mostrar seu próximo evento no mostrador."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Читает календарь, чтобы показывать следующее событие на циферблате."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقرأ تقويمك لعرض حدثك التالي على واجهة الساعة."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leest je agenda om je volgende afspraak op je wijzerplaat te tonen."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läser din kalender för att visa nästa händelse på urtavlan."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonraki etkinliğinizi kadranda göstermek için takviminizi okur."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Membaca kalender untuk menampilkan acara berikutnya di tampilan jam."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

@@ -69,22 +69,26 @@ func at(_ day: Int, _ h: Int, _ m: Int = 0) -> Date {
 
     @Test func 次に始まる予定を出す_終日は出さない() {
         let d = NextEvent.display(events, now: at(27, 12), calendar: tokyo)
-        #expect(d == NextEventDisplay(when: "14:30", title: "打ち合わせ", inProgress: false))
+        #expect(d == .upcoming(title: "打ち合わせ", start: at(27, 14, 30), day: .today))
     }
 
     @Test func 進行中は終わりの時刻() {
         let d = NextEvent.display(events, now: at(27, 9, 10), calendar: tokyo)
-        #expect(d == NextEventDisplay(when: "〜9:30", title: "朝会", inProgress: true))
+        #expect(d == .now(title: "朝会", until: at(27, 9, 30)))
     }
 
-    @Test func 明日の予定には明日と付ける() {
+    @Test func 明日の予定は明日として出す() {
         let d = NextEvent.display(events, now: at(27, 20), calendar: tokyo)
-        #expect(d.when == "明日 10:00")
-        #expect(d.title == "歯医者")
+        #expect(d == .upcoming(title: "歯医者", start: at(28, 10), day: .tomorrow))
+    }
+
+    @Test func 明後日以降はlater() {
+        let e = [CalEvent(title: "会議", start: at(29, 7), end: at(29, 8))]
+        #expect(NextEvent.display(e, now: at(27, 20), calendar: tokyo) == .upcoming(title: "会議", start: at(29, 7), day: .later))
     }
 
     @Test func 終わった予定と36時間より先は出さない() {
-        #expect(NextEvent.display(events, now: at(28, 12), calendar: tokyo).title == "予定なし")
+        #expect(NextEvent.display(events, now: at(28, 12), calendar: tokyo) == .none)
         let far = [CalEvent(title: "旅行", start: at(30, 9), end: at(30, 10))]
         #expect(NextEvent.pick(far, now: at(27, 12)) == nil)
     }
@@ -93,9 +97,9 @@ func at(_ day: Int, _ h: Int, _ m: Int = 0) -> Date {
         #expect(NextEvent.display(events, now: at(27, 9, 30), calendar: tokyo).title == "打ち合わせ")
     }
 
-    @Test func 無題の予定() {
+    @Test func 無題の予定はtitleがnil() {
         let e = [CalEvent(title: "", start: at(27, 13), end: at(27, 14))]
-        #expect(NextEvent.display(e, now: at(27, 12), calendar: tokyo).title == "（無題）")
+        #expect(NextEvent.display(e, now: at(27, 12), calendar: tokyo).title == nil)
     }
 
     @Test func 切り替わる時刻は始まり_終わり_日付の変わり目() {

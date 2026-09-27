@@ -15,13 +15,24 @@ public struct CalEvent: Codable, Equatable, Sendable {
     }
 }
 
-/// 文字盤に出す「次の予定」1件
-public struct NextEventDisplay: Equatable, Sendable {
-    /// 上の小さい行（例：「14:30」「〜15:00」「明日 9:00」）
-    public var when: String
-    /// 下の行（予定の名前）。無いときは「予定なし」
-    public var title: String
-    public var inProgress: Bool
+/// 文字盤に出す「次の予定」1件。**文言は持たない**（訳は画面側。引き継ぎ書 4-178）
+public enum NextEventDisplay: Equatable, Sendable {
+    /// 出す予定が無い
+    case none
+    /// 進行中。`until` は終わりの時刻
+    case now(title: String, until: Date)
+    /// これから始まる
+    case upcoming(title: String, start: Date, day: Day)
+
+    public enum Day: Equatable, Sendable { case today, tomorrow, later }
+
+    /// 予定の名前。空なら nil（画面側で「無題」と出す）
+    public var title: String? {
+        switch self {
+        case .none: nil
+        case .now(let t, _), .upcoming(let t, _, _): t.isEmpty ? nil : t
+        }
+    }
 }
 
 public enum NextEvent {
@@ -38,22 +49,17 @@ public enum NextEvent {
     }
 
     public static func display(_ events: [CalEvent], now: Date, calendar: Calendar = .current) -> NextEventDisplay {
-        guard let e = pick(events, now: now) else {
-            return NextEventDisplay(when: "", title: "予定なし", inProgress: false)
-        }
-        let title = e.title.isEmpty ? "（無題）" : e.title
-        if e.start <= now {
-            return NextEventDisplay(when: "〜" + hm(e.end, calendar), title: title, inProgress: true)
-        }
-        let prefix: String
+        guard let e = pick(events, now: now) else { return .none }
+        if e.start <= now { return .now(title: e.title, until: e.end) }
+        let day: NextEventDisplay.Day
         if calendar.isDate(e.start, inSameDayAs: now) {
-            prefix = ""
+            day = .today
         } else if let t = calendar.date(byAdding: .day, value: 1, to: now), calendar.isDate(e.start, inSameDayAs: t) {
-            prefix = "明日 "
+            day = .tomorrow
         } else {
-            prefix = "\(calendar.component(.month, from: e.start))/\(calendar.component(.day, from: e.start)) "
+            day = .later
         }
-        return NextEventDisplay(when: prefix + hm(e.start, calendar), title: title, inProgress: false)
+        return .upcoming(title: e.title, start: e.start, day: day)
     }
 
     /// 表示が変わる時刻（予定の始まり・終わり・日付の変わり目）。タイムラインの区切りに使う。
@@ -69,10 +75,5 @@ public enum NextEvent {
             day = next
         }
         return dates.sorted()
-    }
-
-    static func hm(_ d: Date, _ calendar: Calendar) -> String {
-        let c = calendar.dateComponents([.hour, .minute], from: d)
-        return String(format: "%d:%02d", c.hour ?? 0, c.minute ?? 0)
     }
 }

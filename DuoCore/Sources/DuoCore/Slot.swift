@@ -8,14 +8,6 @@ public enum Slot: String, CaseIterable, Codable, Sendable, Identifiable {
 
     public var id: String { rawValue }
 
-    public var title: String {
-        switch self {
-        case .battery: "電池"
-        case .steps: "歩数"
-        case .nextEvent: "次の予定"
-        }
-    }
-
     /// SF Symbols の名前
     public var symbol: String {
         switch self {
@@ -54,6 +46,4 @@ public struct SlotPair: Hashable, Codable, Sendable {
     }
 
     public static let `default` = SlotPair(left: .steps, right: .battery)
-
-    public var name: String { "\(left.title)｜\(right.title)" }
 }

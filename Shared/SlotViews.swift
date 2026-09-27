@@ -52,9 +52,8 @@ struct SlotHalf: View {
         switch slot {
         case .battery, .steps: return slot.title
         case .nextEvent:
-            guard let events = snapshot.events else { return "予定" }
-            let d = NextEvent.display(events, now: now)
-            return d.when.isEmpty ? "予定" : d.when
+            guard let events = snapshot.events else { return String(localized: "予定") }
+            return NextEvent.display(events, now: now).whenText ?? String(localized: "予定")
         }
     }
 
@@ -63,12 +62,50 @@ struct SlotHalf: View {
         case .battery: return snapshot.battery.percentText
         case .steps: return StepsText.format(snapshot.steps)
         case .nextEvent:
-            guard let events = snapshot.events else { return "許可なし" }
-            return NextEvent.display(events, now: now).title
+            guard let events = snapshot.events else { return String(localized: "許可なし") }
+            return NextEvent.display(events, now: now).titleText
         }
     }
 
     private var valueSize: CGFloat { slot == .nextEvent ? 15 : 24 }
+}
+
+/// 文言は Core に持たせず、ここで訳す（引き継ぎ書 4-178）
+extension Slot {
+    var title: String {
+        switch self {
+        case .battery: String(localized: "電池")
+        case .steps: String(localized: "歩数")
+        case .nextEvent: String(localized: "次の予定")
+        }
+    }
+}
+
+extension SlotPair {
+    var name: String { "\(left.title) | \(right.title)" }
+}
+
+extension NextEventDisplay {
+    /// 上の小さい行。予定が無いときは nil
+    var whenText: String? {
+        switch self {
+        case .none: return nil
+        case .now(_, let until): return String(localized: "〜\(Self.time(until))")
+        case .upcoming(_, let start, let day):
+            switch day {
+            case .today: return Self.time(start)
+            case .tomorrow: return String(localized: "明日 \(Self.time(start))")
+            case .later: return start.formatted(.dateTime.month(.defaultDigits).day().hour().minute())
+            }
+        }
+    }
+
+    var titleText: String {
+        if case .none = self { return String(localized: "予定なし") }
+        return title ?? String(localized: "（無題）")
+    }
+
+    static func time(_ d: Date) -> String { d.formatted(date: .omitted, time: .shortened) }
 }
 
 /// 大きい四角の中身。左右それぞれを Link で包むと、文字盤の上で押し分けられる（引き継ぎ書 4-193）
@@ -84,6 +121,8 @@ struct PairView: View {
             Rectangle().fill(.secondary.opacity(0.35)).frame(width: 1)
             half(pair.right)
         }
+        // 「左」「右」は画面の左右のこと。右から左の言語でも入れ替えない（引き継ぎ書 4-187）
+        .environment(\.layoutDirection, .leftToRight)
     }
 
     @ViewBuilder private func half(_ slot: Slot) -> some View {
