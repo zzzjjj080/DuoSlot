@@ -17,7 +17,7 @@ func color(_ hex: UInt32, _ a: CGFloat = 1) -> CGColor {
 }
 func ctx(_ w: Int, _ h: Int) -> CGContext {
     CGContext(data: nil, width: w, height: h, bitsPerComponent: 8, bytesPerRow: 0,
-              space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue)!
+              space: CGColorSpace(name: CGColorSpace.sRGB)!, bitmapInfo: CGImageAlphaInfo.noneSkipLast.rawValue)!
 }
 func save(_ image: CGImage, _ path: String) {
     try! NSBitmapImageRep(cgImage: image).representation(using: .png, properties: [:])!.write(to: URL(fileURLWithPath: path))
@@ -105,9 +105,15 @@ func draw(_ n: Int, _ c: CGContext) {
     }
 }
 
-func icon(_ n: Int, _ size: Int = 1024) -> CGImage {
+/// `inset` は中身を中心へ縮める割合。Watch は円に切り抜かれるので、四角の角が欠けないよう縮める
+func icon(_ n: Int, _ size: Int = 1024, inset: CGFloat = 1) -> CGImage {
     let c = ctx(size, size)
     c.scaleBy(x: CGFloat(size) / S, y: CGFloat(size) / S)
+    if inset < 1 {
+        c.setFillColor(color(0x000000)); c.fill(CGRect(x: 0, y: 0, width: S, height: S))
+        c.translateBy(x: S * (1 - inset) / 2, y: S * (1 - inset) / 2)
+        c.scaleBy(x: inset, y: inset)
+    }
     draw(n, c)
     return c.makeImage()!
 }
@@ -115,10 +121,13 @@ func icon(_ n: Int, _ size: Int = 1024) -> CGImage {
 let args = CommandLine.arguments
 if args.count > 1 && args[1] == "final" {
     let n = Int(args[2])!
-    for dir in ["Phone/Assets.xcassets/AppIcon.appiconset", "WatchApp/Assets.xcassets/AppIcon.appiconset"] {
-        try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true)
-        save(icon(n), "\(dir)/icon-1024.png")
-    }
+    save(icon(n), "Phone/Assets.xcassets/AppIcon.appiconset/icon-1024.png")
+    save(icon(n, inset: 0.84), "WatchApp/Assets.xcassets/AppIcon.appiconset/icon-1024.png")
+    // 確かめ用：Watch の円に切り抜いた姿
+    let c = ctx(512, 512)
+    c.addEllipse(in: CGRect(x: 0, y: 0, width: 512, height: 512)); c.clip()
+    c.draw(icon(n, 512, inset: 0.84), in: CGRect(x: 0, y: 0, width: 512, height: 512))
+    save(c.makeImage()!, "store/icon/watch-circle.png")
     exit(0)
 }
 
