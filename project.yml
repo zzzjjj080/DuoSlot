@@ -4,6 +4,9 @@ options:
   deploymentTarget:
     iOS: "18.0"
     watchOS: "11.0"
+packages:
+  DuoCore:
+    path: DuoCore
 settings:
   base:
     DEVELOPMENT_TEAM: A7WA598R44
@@ -48,6 +51,9 @@ targets:
         WKCompanionAppBundleIdentifier: com.zzzjjj080.SplitProto
         WKRunsIndependentlyOfCompanionApp: true
         CFBundleDisplayName: SplitProto
+        NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
+        NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
+        NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
         CFBundleURLTypes:
           - CFBundleURLName: com.zzzjjj080.SplitProto
             CFBundleURLSchemes: [splitproto]
@@ -55,8 +61,11 @@ targets:
       path: Gen/Watch.entitlements
       properties:
         com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
     dependencies:
       - target: SplitProtoWidget
+      - package: DuoCore
   SplitProtoWidget:
     type: app-extension
     platform: watchOS
@@ -66,13 +75,20 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto.watchkitapp.Widget
         GENERATE_INFOPLIST_FILE: YES
         SKIP_INSTALL: YES
+    dependencies:
+      - package: DuoCore
     info:
       path: Gen/Widget-Info.plist
       properties:
         CFBundleDisplayName: SplitProto
+        NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
+        NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
+        NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension
     entitlements:
       path: Gen/Widget.entitlements
       properties:
         com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
+        com.apple.developer.healthkit: true
+        com.apple.developer.healthkit.access: []
