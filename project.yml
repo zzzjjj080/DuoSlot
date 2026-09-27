@@ -13,7 +13,7 @@ settings:
     DEVELOPMENT_TEAM: A7WA598R44
     CODE_SIGN_STYLE: Automatic
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "0.1"
+    MARKETING_VERSION: "1.0"
     CURRENT_PROJECT_VERSION: "1"
     SP_BUILD_STAMP: ""
 targets:
@@ -60,6 +60,7 @@ targets:
         WKRunsIndependentlyOfCompanionApp: true
         CFBundleDisplayName: Duo Slot
         NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
+        NSHealthUpdateUsageDescription: Duo Slot はヘルスケアへ書き込みません。今日の歩数を読むためだけに使います。
         NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
         NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
         CFBundleURLTypes:
@@ -90,6 +91,7 @@ targets:
       properties:
         CFBundleDisplayName: Duo Slot
         NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
+        NSHealthUpdateUsageDescription: Duo Slot はヘルスケアへ書き込みません。今日の歩数を読むためだけに使います。
         NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
         NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
         NSExtension:

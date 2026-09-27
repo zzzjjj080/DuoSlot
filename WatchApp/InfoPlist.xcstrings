@@ -303,6 +303,107 @@
           }
         }
       }
+    },
+    "NSHealthUpdateUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot はヘルスケアへ書き込みません。今日の歩数を読むためだけに使います。"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot never writes to Health. It only reads today’s steps."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot 不会写入“健康”，只读取今日步数。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot 不會寫入「健康」，只讀取今日步數。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot는 건강 앱에 기록하지 않으며, 오늘 걸음 수를 읽기만 합니다."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot nunca escribe en Salud. Solo lee los pasos de hoy."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot n’écrit jamais dans Santé. Il lit seulement les pas du jour."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot schreibt nie in Health. Es liest nur die heutigen Schritte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot non scrive mai in Salute. Legge solo i passi di oggi."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Duo Slot nunca grava no Saúde. Ele só lê os passos de hoje."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot никогда не записывает в «Здоровье». Он только читает сегодняшние шаги."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا يكتب Duo Slot أبدًا في تطبيق الصحة، بل يقرأ خطوات اليوم فقط."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot schrijft nooit naar Gezondheid. Het leest alleen de stappen van vandaag."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot skriver aldrig till Hälsa. Den läser bara dagens steg."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot Sağlık'a asla yazmaz. Yalnızca bugünkü adımları okur."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duo Slot tidak pernah menulis ke Kesehatan. Hanya membaca langkah hari ini."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

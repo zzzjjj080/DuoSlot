@@ -722,6 +722,24 @@
       "Läser din kalender för att visa nästa händelse på urtavlan.",
       "Sonraki etkinliğinizi kadranda göstermek için takviminizi okur.",
       "Membaca kalender untuk menampilkan acara berikutnya di tampilan jam."
+    ],
+    "NSHealthUpdateUsageDescription": [
+      "Duo Slot はヘルスケアへ書き込みません。今日の歩数を読むためだけに使います。",
+      "Duo Slot never writes to Health. It only reads today’s steps.",
+      "Duo Slot 不会写入“健康”，只读取今日步数。",
+      "Duo Slot 不會寫入「健康」，只讀取今日步數。",
+      "Duo Slot는 건강 앱에 기록하지 않으며, 오늘 걸음 수를 읽기만 합니다.",
+      "Duo Slot nunca escribe en Salud. Solo lee los pasos de hoy.",
+      "Duo Slot n’écrit jamais dans Santé. Il lit seulement les pas du jour.",
+      "Duo Slot schreibt nie in Health. Es liest nur die heutigen Schritte.",
+      "Duo Slot non scrive mai in Salute. Legge solo i passi di oggi.",
+      "O Duo Slot nunca grava no Saúde. Ele só lê os passos de hoje.",
+      "Duo Slot никогда не записывает в «Здоровье». Он только читает сегодняшние шаги.",
+      "لا يكتب Duo Slot أبدًا في تطبيق الصحة، بل يقرأ خطوات اليوم فقط.",
+      "Duo Slot schrijft nooit naar Gezondheid. Het leest alleen de stappen van vandaag.",
+      "Duo Slot skriver aldrig till Hälsa. Den läser bara dagens steg.",
+      "Duo Slot Sağlık'a asla yazmaz. Yalnızca bugünkü adımları okur.",
+      "Duo Slot tidak pernah menulis ke Kesehatan. Hanya membaca langkah hari ini."
     ]
   }
 }

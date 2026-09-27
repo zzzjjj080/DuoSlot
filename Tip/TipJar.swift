@@ -1,6 +1,9 @@
 import Foundation
 import Observation
 import StoreKit
+#if os(iOS)
+import UIKit
+#endif
 
 /// 「コーヒーを奢る」ボタンの窓口。
 ///
@@ -73,7 +76,7 @@ public final class TipJar {
         guard let product else { return }
         state = .purchasing
         do {
-            switch try await product.purchase() {
+            switch try await purchase(product) {
             case .success(let verification):
                 guard case .verified(let transaction) = verification else {
                     state = .failed("unverified")
@@ -90,8 +93,19 @@ public final class TipJar {
                 state = .idle
             }
         } catch {
-            state = .failed("failed")
+            // 理由を残す（4-1）。画面は「うまくいきませんでした」だが、記録には中身を出す
+            state = .failed(error.localizedDescription)
         }
+    }
+
+    /// iPad では購入シートを出す画面を渡さないと失敗する（iPhone 専用でも審査は iPad で行う。引き継ぎ書 4-106）
+    private func purchase(_ product: Product) async throws -> Product.PurchaseResult {
+        #if os(iOS)
+        if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) {
+            return try await product.purchase(confirmIn: scene)
+        }
+        #endif
+        return try await product.purchase()
     }
 
     public func dismissThanks() {
