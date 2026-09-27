@@ -128,7 +128,9 @@ def main() -> int:
 
     # 5. 審査用スクリーンショット
     _, shot = api("get", f"/v2/inAppPurchases/{iap}/appStoreReviewScreenshot")
-    if not shot.get("data"):
+    if not shot.get("data") and not SHOT.exists():
+        print(f"  審査用スクショ: {SHOT} がまだ無い（撮ってからもう一度走らせる）")
+    elif not shot.get("data"):
         data = SHOT.read_bytes()
         _, made = api("post", "/v1/inAppPurchaseAppStoreReviewScreenshots", {"data": {
             "type": "inAppPurchaseAppStoreReviewScreenshots",

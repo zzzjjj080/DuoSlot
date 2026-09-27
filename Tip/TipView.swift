@@ -17,7 +17,7 @@ struct TipView: View {
             case .failed:
                 Text("うまくいきませんでした").multilineTextAlignment(.center)
                 close
-            case .unavailable:
+            case .unavailable where samplePrice == nil:
                 Text("いまは受け付けられません").multilineTextAlignment(.center)
                 close
             case .loading, .purchasing:
@@ -29,7 +29,7 @@ struct TipView: View {
                 } label: {
                     VStack(spacing: 1) {
                         Text("コーヒーを奢る").font(.headline)
-                        if let price = tipJar.displayPrice {
+                        if let price = samplePrice ?? tipJar.displayPrice {
                             Text(price).font(.caption.weight(.semibold)).monospacedDigit().opacity(0.8)
                         }
                     }
@@ -51,6 +51,15 @@ struct TipView: View {
         .padding()
         .task { await tipJar.load() }
         .sensoryFeedback(.success, trigger: tipJar.cups)
+    }
+
+    /// 撮影・審査用の見本の値段。**DEBUG 構成にしか無い**（`DS_TIP_SAMPLE=¥200`）
+    private var samplePrice: String? {
+        #if DEBUG
+        ProcessInfo.processInfo.environment["DS_TIP_SAMPLE"]
+        #else
+        nil
+        #endif
     }
 
     private var close: some View {

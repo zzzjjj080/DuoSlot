@@ -24,8 +24,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 ASC = str(ROOT / "Tools-ASC.py")
 APP_ID = "6816655833"
-SHOTS = {"APP_WATCH_SERIES_10": ("watch", 4), "APP_IPHONE_67": ("phone", 4)}
-ORDER = ["running", "paused", "done", "settings"]
+SHOTS = {"APP_WATCH_SERIES_10": ("watch", 4), "APP_IPHONE_67": ("phone", 4), "APP_IPHONE_65": ("65/phone", 4)}
+ORDER = ["face1", "face2", "face3", "steps"]
 
 
 def api(method: str, path: str, body: dict | None = None) -> dict:
