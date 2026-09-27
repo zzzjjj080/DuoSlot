@@ -22,7 +22,7 @@ func at(_ day: Int, _ h: Int, _ m: Int = 0) -> Date {
     @Test func URLから戻せる() {
         for s in Slot.allCases { #expect(Slot(url: s.url) == s) }
         #expect(Slot(url: URL(string: "other://steps")!) == nil)
-        #expect(Slot(url: URL(string: "splitproto://nope")!) == nil)
+        #expect(Slot(url: URL(string: "duoslot://nope")!) == nil)
     }
 }
 

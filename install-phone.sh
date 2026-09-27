@@ -11,12 +11,12 @@ xcrun devicectl device info details --device "$DEV" --timeout 60 >/dev/null 2>&1
 STAMP="b$(git rev-list --count HEAD 2>/dev/null || echo 0)$(git diff --quiet HEAD -- . 2>/dev/null || echo +) $(date '+%m/%d %H:%M')"
 echo "→ 印: $STAMP"
 xcodegen generate >/dev/null
-xcodebuild -project SplitProto.xcodeproj -scheme SplitProto -configuration Debug \
+xcodebuild -project DuoSlot.xcodeproj -scheme DuoSlot -configuration Debug \
   -destination "platform=iOS,id=$DEV" -destination-timeout 60 -derivedDataPath /tmp/sp-phone-device \
   SP_BUILD_STAMP="$STAMP" -allowProvisioningUpdates build 2>&1 | grep -E "error:|BUILD SUCCEEDED" | tee /tmp/sp-build.log
 grep -q "BUILD SUCCEEDED" /tmp/sp-build.log || { echo "❌ ビルドが通っていないので入れません"; exit 1; }
 
-APP=/tmp/sp-phone-device/Build/Products/Debug-iphoneos/SplitProto.app
+APP=/tmp/sp-phone-device/Build/Products/Debug-iphoneos/DuoSlot.app
 W=$(ls -d "$APP"/Watch/*.app)
 echo "→ 同梱の Watch アプリの印: $(/usr/libexec/PlistBuddy -c 'Print SPBuildStamp' "$W/Info.plist")"
 ls "$W/PlugIns"

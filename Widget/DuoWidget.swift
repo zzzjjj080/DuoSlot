@@ -82,7 +82,7 @@ struct DuoWidget: Widget {
             PairView(pair: e.pair, snapshot: e.snapshot, now: e.date)
                 .containerBackground(for: .widget) { Color.clear }
         }
-        .configurationDisplayName("2つ並べる")
+        .configurationDisplayName("Duo Slot")
         .description("大きい四角の左右に、別々のものを出します。")
         .supportedFamilies([.accessoryRectangular])
     }

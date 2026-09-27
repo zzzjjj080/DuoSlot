@@ -9,7 +9,7 @@ import WidgetKit
 /// アプリと文字盤の拡張で共有する保存場所（App Group）。
 /// 拡張は自分でも読みに行くが、読めなかったときはアプリが最後に書いた値を出す
 enum Shared {
-    static let group = "group.com.zzzjjj080.SplitProto"
+    static let group = "group.com.zzzjjj080.DuoSlot"
     static var defaults: UserDefaults { UserDefaults(suiteName: group) ?? .standard }
 
     static func save<T: Encodable>(_ value: T, _ key: String) {

@@ -28,7 +28,7 @@ public enum Slot: String, CaseIterable, Codable, Sendable, Identifiable {
     /// 文字盤で押したときに開く先（アプリの `onOpenURL` で受ける）
     public var url: URL { URL(string: "\(Slot.scheme)://\(rawValue)")! }
 
-    public static let scheme = "splitproto"
+    public static let scheme = "duoslot"
 
     public init?(url: URL) {
         guard url.scheme == Slot.scheme, let host = url.host(), let s = Slot(rawValue: host) else { return nil }

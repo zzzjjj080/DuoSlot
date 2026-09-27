@@ -1,4 +1,4 @@
-name: SplitProto
+name: DuoSlot
 options:
   bundleIdPrefix: com.zzzjjj080
   deploymentTarget:
@@ -16,31 +16,32 @@ settings:
     CURRENT_PROJECT_VERSION: "1"
     SP_BUILD_STAMP: ""
 targets:
-  SplitProto:
+  DuoSlot:
     type: application
     platform: iOS
     sources: [Phone]
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot
         TARGETED_DEVICE_FAMILY: "1"
         GENERATE_INFOPLIST_FILE: YES
     info:
       path: Gen/Phone-Info.plist
       properties:
         SPBuildStamp: $(SP_BUILD_STAMP)
+        CFBundleDisplayName: Duo Slot
         UILaunchScreen: {}
         ITSAppUsesNonExemptEncryption: false
     dependencies:
-      - target: SplitProtoWatch
-  SplitProtoWatch:
+      - target: DuoSlotWatch
+  DuoSlotWatch:
     type: application
     platform: watchOS
     sources: [WatchApp, Shared]
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto.watchkitapp
-        PRODUCT_NAME: "SplitProto Watch App"
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot.watchkitapp
+        PRODUCT_NAME: "DuoSlot Watch App"
         GENERATE_INFOPLIST_FILE: YES
         SKIP_INSTALL: YES
     info:
@@ -48,31 +49,31 @@ targets:
       properties:
         SPBuildStamp: $(SP_BUILD_STAMP)
         WKApplication: true
-        WKCompanionAppBundleIdentifier: com.zzzjjj080.SplitProto
+        WKCompanionAppBundleIdentifier: com.zzzjjj080.DuoSlot
         WKRunsIndependentlyOfCompanionApp: true
-        CFBundleDisplayName: SplitProto
+        CFBundleDisplayName: Duo Slot
         NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
         NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
         NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
         CFBundleURLTypes:
-          - CFBundleURLName: com.zzzjjj080.SplitProto
-            CFBundleURLSchemes: [splitproto]
+          - CFBundleURLName: com.zzzjjj080.DuoSlot
+            CFBundleURLSchemes: [duoslot]
     entitlements:
       path: Gen/Watch.entitlements
       properties:
-        com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
+        com.apple.security.application-groups: [group.com.zzzjjj080.DuoSlot]
         com.apple.developer.healthkit: true
         com.apple.developer.healthkit.access: []
     dependencies:
-      - target: SplitProtoWidget
+      - target: DuoSlotWidget
       - package: DuoCore
-  SplitProtoWidget:
+  DuoSlotWidget:
     type: app-extension
     platform: watchOS
     sources: [Widget, Shared]
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto.watchkitapp.Widget
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot.watchkitapp.Widget
         GENERATE_INFOPLIST_FILE: YES
         SKIP_INSTALL: YES
     dependencies:
@@ -80,7 +81,7 @@ targets:
     info:
       path: Gen/Widget-Info.plist
       properties:
-        CFBundleDisplayName: SplitProto
+        CFBundleDisplayName: Duo Slot
         NSHealthShareUsageDescription: iPhone で数えた歩数も合わせて、ヘルスケアと同じ今日の歩数を文字盤に出すために読みます。
         NSMotionUsageDescription: 今日の歩数を文字盤に出すために、Apple Watch の歩数計を読みます。
         NSCalendarsFullAccessUsageDescription: 次の予定を文字盤に出すために、カレンダーを読みます。
@@ -89,6 +90,6 @@ targets:
     entitlements:
       path: Gen/Widget.entitlements
       properties:
-        com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
+        com.apple.security.application-groups: [group.com.zzzjjj080.DuoSlot]
         com.apple.developer.healthkit: true
         com.apple.developer.healthkit.access: []

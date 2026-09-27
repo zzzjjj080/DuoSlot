@@ -15,7 +15,7 @@ struct DuoPhoneApp: App {
                     Section { Text("文字盤で左右を押すと、押した側の画面が Watch で開きます。") }
                     Text(stamp).font(.footnote).foregroundStyle(.secondary)
                 }
-                .navigationTitle("2つ並べる")
+                .navigationTitle("Duo Slot")
             }
         }
     }

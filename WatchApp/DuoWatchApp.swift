@@ -29,7 +29,7 @@ struct RootView: View {
                 }
                 Text(Stamp.text).font(.system(size: 10)).foregroundStyle(.secondary)
             }
-            .navigationTitle("2つ並べる")
+            .navigationTitle("Duo Slot")
             .navigationDestination(for: Slot.self) { DetailView(slot: $0, snapshot: snapshot) }
         }
         .task { await firstLaunch() }

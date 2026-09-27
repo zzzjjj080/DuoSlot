@@ -1,4 +1,4 @@
-# SplitProto（仮の名前）
+# DuoSlot（仮の名前）
 
 Apple Watch の文字盤の大きい四角（accessoryRectangular）の**左右に、別々のものを2つ同時に出す**アプリ。
 左右は押し分けられ、押した側の画面が Watch アプリで開く（試作で確かめた。引き継ぎ書 4-193）。
