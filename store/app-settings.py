@@ -29,10 +29,10 @@ attrs = dict(none, gambling=False, unrestrictedWebAccess=False, healthOrWellness
              parentalControls=False, ageAssurance=False, lootBox=False)
 asc("patch", f"/v1/ageRatingDeclarations/{INFO}", {"data": {"type": "ageRatingDeclarations", "id": INFO, "attributes": attrs}})
 
-# カテゴリ：ユーティリティ（副：ヘルスケア／フィットネス）
+# カテゴリ：ユーティリティだけ。副に「ヘルスケア／フィットネス」を入れると医療機器の申告を求められる（4-130）
 asc("patch", f"/v1/appInfos/{INFO}", {"data": {"type": "appInfos", "id": INFO, "relationships": {
     "primaryCategory": {"data": {"type": "appCategories", "id": "UTILITIES"}},
-    "secondaryCategory": {"data": {"type": "appCategories", "id": "HEALTH_AND_FITNESS"}}}}})
+    "secondaryCategory": {"data": None}}}})
 
 # 外部のコンテンツは使わない（未設定だと版を審査の箱に入れられない。4-171）
 asc("patch", f"/v1/apps/{APP}", {"data": {"type": "apps", "id": APP,
