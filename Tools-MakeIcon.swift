@@ -48,52 +48,60 @@ func battery(_ c: CGContext, in r: CGRect, _ hex: UInt32, ground: UInt32) {
     fill(c, rr(CGRect(x: body.maxX + r.width * 0.02, y: r.midY - r.height * 0.1, width: r.width * 0.08, height: r.height * 0.2), r.width * 0.03), hex)
 }
 
+/// 足あと2つ（歩数の印）。SF Symbols は使わず自分で描く
+func footprints(_ c: CGContext, in r: CGRect, _ hex: UInt32) {
+    func foot(_ x: CGFloat, _ y: CGFloat, _ w: CGFloat) {
+        c.setFillColor(color(hex))
+        c.addEllipse(in: CGRect(x: x, y: y + w * 0.62, width: w, height: w * 1.25)); c.fillPath()   // つま先側
+        c.addEllipse(in: CGRect(x: x + w * 0.1, y: y, width: w * 0.8, height: w * 0.62)); c.fillPath() // かかと
+    }
+    let w = r.width * 0.36
+    foot(r.minX, r.minY, w)
+    foot(r.minX + r.width * 0.5, r.minY + r.height * 0.28, w)
+}
+
+func text(_ c: CGContext, _ s: String, at p: CGPoint, size: CGFloat, _ hex: UInt32) {
+    let font = NSFont.systemFont(ofSize: size, weight: .bold)
+    let rounded = NSFont(descriptor: font.fontDescriptor.withDesign(.rounded) ?? font.fontDescriptor, size: size) ?? font
+    let a = NSAttributedString(string: s, attributes: [.font: rounded, .foregroundColor: NSColor(cgColor: color(hex))!, .kern: -size * 0.03])
+    NSGraphicsContext.saveGraphicsState()
+    NSGraphicsContext.current = NSGraphicsContext(cgContext: c, flipped: false)
+    a.draw(at: p)
+    NSGraphicsContext.restoreGraphicsState()
+}
+
+/// コンプリケーションの見た目そのもの：左に歩数、右に電池。上に色の付いた印、下に大きい数字
+func complication(_ c: CGContext, panel: CGRect, ground: UInt32, panelFill: UInt32?, numbersColored: Bool, labels: Bool) {
+    if let panelFill { fill(c, rr(panel, 90), panelFill) }
+    let half = panel.width / 2
+    let top = panel.maxY - 150
+    // 左：歩数
+    footprints(c, in: CGRect(x: panel.minX + 60, y: top - 20, width: 110, height: 120), ORANGE)
+    if labels { text(c, "STEPS", at: CGPoint(x: panel.minX + 185, y: top + 5), size: 56, ORANGE) }
+    text(c, "8,432", at: CGPoint(x: panel.minX + 48, y: panel.minY + 55), size: 150, numbersColored ? ORANGE : WHITE)
+    // 仕切り
+    fill(c, CGPath(rect: CGRect(x: panel.midX - 5, y: panel.minY + 60, width: 10, height: panel.height - 120), transform: nil), WHITE, 0.3)
+    // 右：電池
+    battery(c, in: CGRect(x: panel.minX + half + 55, y: top - 10, width: 160, height: 110), GREEN, ground: panelFill ?? ground)
+    text(c, "82%", at: CGPoint(x: panel.minX + half + 55, y: panel.minY + 55), size: 150, numbersColored ? GREEN : WHITE)
+}
+
 func draw(_ n: Int, _ c: CGContext) {
     let full = CGRect(x: 0, y: 0, width: S, height: S)
     switch n {
-    case 1: // 濃い地に、横長の枠。左右で色を分ける
-        fill(c, CGPath(rect: full, transform: nil), INK)
-        let slot = CGRect(x: 120, y: 330, width: 784, height: 364)
-        c.saveGState(); c.addPath(rr(slot, 110)); c.clip()
-        fill(c, CGPath(rect: CGRect(x: slot.minX, y: slot.minY, width: slot.width/2, height: slot.height), transform: nil), ORANGE)
-        fill(c, CGPath(rect: CGRect(x: slot.midX, y: slot.minY, width: slot.width/2, height: slot.height), transform: nil), GREEN)
-        c.restoreGState()
-        fill(c, CGPath(rect: CGRect(x: slot.midX - 14, y: slot.minY, width: 28, height: slot.height), transform: nil), INK)
-    case 2: // 濃い地に、枠の輪郭と、左右に形
-        fill(c, CGPath(rect: full, transform: nil), INK)
-        let slot = CGRect(x: 100, y: 312, width: 824, height: 400)
-        c.addPath(rr(slot, 120)); c.setStrokeColor(color(WHITE, 0.9)); c.setLineWidth(34); c.strokePath()
-        fill(c, CGPath(rect: CGRect(x: slot.midX - 12, y: slot.minY + 70, width: 24, height: slot.height - 140), transform: nil), WHITE, 0.5)
-        steps(c, in: CGRect(x: 190, y: 400, width: 230, height: 224), ORANGE)
-        battery(c, in: CGRect(x: 580, y: 400, width: 260, height: 224), GREEN, ground: INK)
-    case 3: // 全面を左右で塗り分け
-        fill(c, CGPath(rect: CGRect(x: 0, y: 0, width: S/2, height: S), transform: nil), ORANGE)
-        fill(c, CGPath(rect: CGRect(x: S/2, y: 0, width: S/2, height: S), transform: nil), GREEN)
-        steps(c, in: CGRect(x: 130, y: 390, width: 260, height: 250), WHITE)
-        battery(c, in: CGRect(x: 610, y: 390, width: 290, height: 250), WHITE, ground: GREEN)
-    case 4: // 濃い地に、2つの丸（2つ同時）
-        fill(c, CGPath(rect: full, transform: nil), INK)
-        let slot = CGRect(x: 110, y: 342, width: 804, height: 340)
-        fill(c, rr(slot, 170), 0x2A3038)
-        c.addEllipse(in: CGRect(x: 160, y: 382, width: 260, height: 260)); c.setFillColor(color(ORANGE)); c.fillPath()
-        c.addEllipse(in: CGRect(x: 604, y: 382, width: 260, height: 260)); c.setFillColor(color(CYAN)); c.fillPath()
-    case 5: // 白地に、色の枠
-        fill(c, CGPath(rect: full, transform: nil), 0xF4F5F7)
-        let slot = CGRect(x: 110, y: 322, width: 804, height: 380)
-        fill(c, rr(slot, 110), INK)
-        steps(c, in: CGRect(x: 190, y: 400, width: 230, height: 224), ORANGE)
-        fill(c, CGPath(rect: CGRect(x: slot.midX - 10, y: slot.minY + 70, width: 20, height: slot.height - 140), transform: nil), WHITE, 0.35)
-        battery(c, in: CGRect(x: 590, y: 400, width: 250, height: 224), GREEN, ground: INK)
-    default: // 6：枠の左右に色を分け、形は濃い色で
-        fill(c, CGPath(rect: full, transform: nil), INK)
-        let slot = CGRect(x: 90, y: 300, width: 844, height: 424)
-        c.saveGState(); c.addPath(rr(slot, 120)); c.clip()
-        fill(c, CGPath(rect: CGRect(x: slot.minX, y: slot.minY, width: slot.width/2, height: slot.height), transform: nil), ORANGE)
-        fill(c, CGPath(rect: CGRect(x: slot.midX, y: slot.minY, width: slot.width/2, height: slot.height), transform: nil), GREEN)
-        c.restoreGState()
-        fill(c, CGPath(rect: CGRect(x: slot.midX - 12, y: slot.minY, width: 24, height: slot.height), transform: nil), INK)
-        steps(c, in: CGRect(x: 180, y: 400, width: 250, height: 224), INK)
-        battery(c, in: CGRect(x: 580, y: 400, width: 270, height: 224), INK, ground: GREEN)
+    case 1: // 黒地にそのまま（文字盤の上の見た目）
+        fill(c, CGPath(rect: full, transform: nil), 0x000000)
+        complication(c, panel: CGRect(x: 40, y: 280, width: 944, height: 464), ground: 0x000000, panelFill: nil, numbersColored: false, labels: false)
+    case 2: // 黒地に、濃い灰色の枠
+        fill(c, CGPath(rect: full, transform: nil), 0x000000)
+        complication(c, panel: CGRect(x: 40, y: 280, width: 944, height: 464), ground: 0x000000, panelFill: 0x1F2226, numbersColored: false, labels: false)
+    case 3: // 数字も色で
+        fill(c, CGPath(rect: full, transform: nil), 0x000000)
+        complication(c, panel: CGRect(x: 40, y: 280, width: 944, height: 464), ground: 0x000000, panelFill: 0x1F2226, numbersColored: true, labels: false)
+    default: // 4：紺の地に枠
+        c.drawLinearGradient(CGGradient(colorsSpace: CGColorSpace(name: CGColorSpace.sRGB)!, colors: [color(0x1B2A44), color(0x0A0F1A)] as CFArray, locations: [0, 1])!,
+                             start: CGPoint(x: 0, y: S), end: CGPoint(x: 0, y: 0), options: [])
+        complication(c, panel: CGRect(x: 40, y: 280, width: 944, height: 464), ground: 0x0A0F1A, panelFill: 0x000000, numbersColored: false, labels: false)
     }
 }
 
@@ -115,11 +123,11 @@ if args.count > 1 && args[1] == "final" {
 }
 
 // 見本：案ごとに 大（角丸）・Watch（円）・ホーム画面の実寸（60px）
-let N = 6, cell: CGFloat = 400, W = Int(cell) * 3, H = Int(cell + 90) * 2
+let N = 4, cell: CGFloat = 400, W = Int(cell) * 2, H = Int(cell + 90) * 2
 let sheet = ctx(W, H)
 sheet.setFillColor(color(0xE9EAEE)); sheet.fill(CGRect(x: 0, y: 0, width: W, height: H))
 for n in 1...N {
-    let col = CGFloat((n - 1) % 3), row = CGFloat((n - 1) / 3)
+    let col = CGFloat((n - 1) % 2), row = CGFloat((n - 1) / 2)
     let ox = col * cell, oy = CGFloat(H) - (row + 1) * (cell + 90)
     let big = CGRect(x: ox + 30, y: oy + 110, width: 250, height: 250)
     sheet.saveGState(); sheet.addPath(rr(big, 56)); sheet.clip(); sheet.draw(icon(n, 512), in: big); sheet.restoreGState()
@@ -133,4 +141,4 @@ for n in 1...N {
     label.draw(at: CGPoint(x: ox + 30, y: oy + 40))
     NSGraphicsContext.restoreGraphicsState()
 }
-save(sheet.makeImage()!, "store/icon/candidates.png")
+save(sheet.makeImage()!, "store/icon/candidates-2.png")
