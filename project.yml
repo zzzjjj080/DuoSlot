@@ -1,0 +1,78 @@
+name: SplitProto
+options:
+  bundleIdPrefix: com.zzzjjj080
+  deploymentTarget:
+    iOS: "18.0"
+    watchOS: "11.0"
+settings:
+  base:
+    DEVELOPMENT_TEAM: A7WA598R44
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+    SP_BUILD_STAMP: ""
+targets:
+  SplitProto:
+    type: application
+    platform: iOS
+    sources: [Phone]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+    info:
+      path: Gen/Phone-Info.plist
+      properties:
+        SPBuildStamp: $(SP_BUILD_STAMP)
+        UILaunchScreen: {}
+        ITSAppUsesNonExemptEncryption: false
+    dependencies:
+      - target: SplitProtoWatch
+  SplitProtoWatch:
+    type: application
+    platform: watchOS
+    sources: [WatchApp, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto.watchkitapp
+        PRODUCT_NAME: "SplitProto Watch App"
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+    info:
+      path: Gen/Watch-Info.plist
+      properties:
+        SPBuildStamp: $(SP_BUILD_STAMP)
+        WKApplication: true
+        WKCompanionAppBundleIdentifier: com.zzzjjj080.SplitProto
+        WKRunsIndependentlyOfCompanionApp: true
+        CFBundleDisplayName: SplitProto
+        CFBundleURLTypes:
+          - CFBundleURLName: com.zzzjjj080.SplitProto
+            CFBundleURLSchemes: [splitproto]
+    entitlements:
+      path: Gen/Watch.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
+    dependencies:
+      - target: SplitProtoWidget
+  SplitProtoWidget:
+    type: app-extension
+    platform: watchOS
+    sources: [Widget, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.SplitProto.watchkitapp.Widget
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+    info:
+      path: Gen/Widget-Info.plist
+      properties:
+        CFBundleDisplayName: SplitProto
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Gen/Widget.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.zzzjjj080.SplitProto]
