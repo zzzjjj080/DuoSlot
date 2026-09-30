@@ -38,169 +38,97 @@
    "name": "Duo Slot",
    "subtitle": "文字盤の1枠に2つ並べる",
    "keywords": "コンプリケーション,文字盤,歩数,電池,バッテリー,予定,カレンダー,ウォッチ,モジュラー,2つ,並べる,残量",
-   "description": "コンプリケーション1つに、2つ並べる。\n\nDuo Slot は、文字盤の大きい四角のコンプリケーションに、2つのものを横に並べて出します。「歩数｜電池」「電池｜次の予定」など。1つの枠で2つ見られるので、ほかの枠を別のものに回せます。\n\n• 電池・歩数・次の予定から2つを選べます\n• 組み合わせは文字盤の編集画面でそのまま選べます（左右の順も自由）\n• 左半分・右半分を押し分けると、押した側の画面が開きます\n• 歩数はヘルスケアと同じ合計。iPhone で数えたぶんも入ります\n• 次の予定は、進行中か36時間以内の次の予定。始まり・終わりの時刻ちょうどに切り替わります\n• 大きい四角のある文字盤（モジュラー系など）で使えます\n• アカウントも広告もなく、情報を集めません。すべて端末の中で完結します\n• 気に入ったら、開発者にコーヒーを奢れます（任意。機能は変わりません）"
+   "description": "コンプリケーション1つに、2つ並べる。\n\nDuo Slot は、文字盤の大きい四角のコンプリケーションに、2つのものを横に並べて出します。「歩数｜電池」「電池｜次の予定」など。1つの枠で2つ見られるので、ほかの枠を別のものに回せます。\n\n• 電池・歩数・次の予定から2つを選べます\n• 組み合わせは文字盤の編集画面でそのまま選べます（左右の順も自由）\n• 左半分・右半分を押し分けると、押した側の画面が開きます\n• 歩数はヘルスケアと同じ合計。iPhone で数えたぶんも入ります\n• 次の予定は、進行中か36時間以内の次の予定。始まり・終わりの時刻ちょうどに切り替わります\n• 大きい四角のある文字盤（モジュラー系など）で使えます\n• アカウントも広告もなく、情報を集めません。すべて端末の中で完結します"
   },
   "en": {
    "name": "Duo Slot",
    "subtitle": "Two in one watch complication",
    "keywords": "complication,watch face,steps,battery,calendar,next event,modular,two,widget,pedometer,dual,glance",
-   "description": "Two things in one complication.\n\nDuo Slot puts two items side by side in the large rectangular complication on your watch face: Steps and Battery, Battery and your Next Event, and more. One slot shows two things, so your other slots are free for something else.\n\n• Choose any two of Battery, Steps and Next Event\n• Pick the pair right in the watch face editor, in either order\n• Tap the left or right half to open that item\n• Steps match the Health app total, including steps counted by your iPhone\n• Next Event shows what’s on now, or what’s next within 36 hours, and switches exactly on time\n• Works on any face with the large rectangular complication, such as the Modular faces\n• No account, no ads, no data collection. Everything stays on your device\n• If you like it, you can buy the developer a coffee (optional; nothing changes)"
+   "description": "Two things in one complication.\n\nDuo Slot puts two items side by side in the large rectangular complication on your watch face: Steps and Battery, Battery and your Next Event, and more. One slot shows two things, so your other slots are free for something else.\n\n• Choose any two of Battery, Steps and Next Event\n• Pick the pair right in the watch face editor, in either order\n• Tap the left or right half to open that item\n• Steps match the Health app total, including steps counted by your iPhone\n• Next Event shows what’s on now, or what’s next within 36 hours, and switches exactly on time\n• Works on any face with the large rectangular complication, such as the Modular faces\n• No account, no ads, no data collection. Everything stays on your device"
   },
   "zh-Hans": {
    "name": "Duo Slot",
    "subtitle": "一个复杂功能，同时显示两项",
    "keywords": "复杂功能,表盘,步数,电池,电量,日历,日程,模块,两项,小组件,计步,手表",
-   "description": "一个复杂功能，同时显示两项。\n\nDuo Slot 在表盘的大矩形复杂功能中并排显示两项内容：步数和电池、电池和下一个日程等。一个位置显示两项，其他位置就能留给别的内容。\n\n• 从电池、步数、下一个日程中任选两项\n• 直接在表盘编辑界面选择组合，左右顺序随意\n• 轻点左半边或右半边，即可打开对应内容\n• 步数与“健康”的总数一致，包括 iPhone 计的步数\n• 下一个日程显示正在进行或36小时内的下一个日程，并在开始和结束时准时切换\n• 适用于带有大矩形复杂功能的表盘（如模块类表盘）\n• 无需账户，没有广告，不收集任何数据，一切都留在设备上\n• 如果喜欢，可以请开发者喝杯咖啡（自愿，功能不变）"
+   "description": "一个复杂功能，同时显示两项。\n\nDuo Slot 在表盘的大矩形复杂功能中并排显示两项内容：步数和电池、电池和下一个日程等。一个位置显示两项，其他位置就能留给别的内容。\n\n• 从电池、步数、下一个日程中任选两项\n• 直接在表盘编辑界面选择组合，左右顺序随意\n• 轻点左半边或右半边，即可打开对应内容\n• 步数与“健康”的总数一致，包括 iPhone 计的步数\n• 下一个日程显示正在进行或36小时内的下一个日程，并在开始和结束时准时切换\n• 适用于带有大矩形复杂功能的表盘（如模块类表盘）\n• 无需账户，没有广告，不收集任何数据，一切都留在设备上"
   },
   "zh-Hant": {
    "name": "Duo Slot",
    "subtitle": "一個複雜功能，同時顯示兩項",
    "keywords": "複雜功能,錶面,步數,電池,電量,行事曆,行程,模組,兩項,小工具,計步,手錶",
-   "description": "一個複雜功能，同時顯示兩項。\n\nDuo Slot 在錶面的大型矩形複雜功能中並排顯示兩項內容：步數和電池、電池和下一個行程等。一個位置顯示兩項，其他位置就能留給別的內容。\n\n• 從電池、步數、下一個行程中任選兩項\n• 直接在錶面編輯畫面選擇組合，左右順序隨意\n• 點一下左半邊或右半邊，即可打開對應內容\n• 步數與「健康」的總數一致，包括 iPhone 計算的步數\n• 下一個行程顯示進行中或36小時內的下一個行程，並在開始和結束時準時切換\n• 適用於具有大型矩形複雜功能的錶面（如模組類錶面）\n• 無需帳號，沒有廣告，不收集任何資料，一切都留在裝置上\n• 如果喜歡，可以請開發者喝杯咖啡（自願，功能不變）"
+   "description": "一個複雜功能，同時顯示兩項。\n\nDuo Slot 在錶面的大型矩形複雜功能中並排顯示兩項內容：步數和電池、電池和下一個行程等。一個位置顯示兩項，其他位置就能留給別的內容。\n\n• 從電池、步數、下一個行程中任選兩項\n• 直接在錶面編輯畫面選擇組合，左右順序隨意\n• 點一下左半邊或右半邊，即可打開對應內容\n• 步數與「健康」的總數一致，包括 iPhone 計算的步數\n• 下一個行程顯示進行中或36小時內的下一個行程，並在開始和結束時準時切換\n• 適用於具有大型矩形複雜功能的錶面（如模組類錶面）\n• 無需帳號，沒有廣告，不收集任何資料，一切都留在裝置上"
   },
   "ko": {
    "name": "Duo Slot",
    "subtitle": "컴플리케이션 하나에 두 가지",
    "keywords": "컴플리케이션,워치페이스,걸음수,배터리,캘린더,일정,모듈러,위젯,만보계,두가지,애플워치",
-   "description": "컴플리케이션 하나에 두 가지.\n\nDuo Slot은 워치 페이스의 큰 직사각형 컴플리케이션에 두 가지를 나란히 표시합니다. 걸음 수와 배터리, 배터리와 다음 일정 등. 한 칸에 두 가지를 보여 주니 다른 칸은 다른 용도로 쓸 수 있습니다.\n\n• 배터리, 걸음 수, 다음 일정 중 두 가지를 선택\n• 워치 페이스 편집 화면에서 바로 조합 선택(좌우 순서 자유)\n• 왼쪽 또는 오른쪽 절반을 누르면 해당 화면이 열림\n• 걸음 수는 건강 앱 합계와 동일(iPhone에서 센 걸음 포함)\n• 다음 일정은 진행 중이거나 36시간 이내의 다음 일정을 표시하고, 시작·종료 시각에 정확히 바뀜\n• 큰 직사각형 컴플리케이션이 있는 페이스(모듈러 계열 등)에서 사용 가능\n• 계정 없음, 광고 없음, 데이터 수집 없음. 모든 것이 기기 안에서 처리됩니다\n• 마음에 드시면 개발자에게 커피 한 잔을 사 줄 수 있습니다(선택 사항, 기능 변화 없음)"
+   "description": "컴플리케이션 하나에 두 가지.\n\nDuo Slot은 워치 페이스의 큰 직사각형 컴플리케이션에 두 가지를 나란히 표시합니다. 걸음 수와 배터리, 배터리와 다음 일정 등. 한 칸에 두 가지를 보여 주니 다른 칸은 다른 용도로 쓸 수 있습니다.\n\n• 배터리, 걸음 수, 다음 일정 중 두 가지를 선택\n• 워치 페이스 편집 화면에서 바로 조합 선택(좌우 순서 자유)\n• 왼쪽 또는 오른쪽 절반을 누르면 해당 화면이 열림\n• 걸음 수는 건강 앱 합계와 동일(iPhone에서 센 걸음 포함)\n• 다음 일정은 진행 중이거나 36시간 이내의 다음 일정을 표시하고, 시작·종료 시각에 정확히 바뀜\n• 큰 직사각형 컴플리케이션이 있는 페이스(모듈러 계열 등)에서 사용 가능\n• 계정 없음, 광고 없음, 데이터 수집 없음. 모든 것이 기기 안에서 처리됩니다"
   },
   "es": {
    "name": "Duo Slot",
    "subtitle": "Dos cosas en una complicación",
    "keywords": "complicación,esfera,pasos,batería,calendario,evento,modular,widget,podómetro,dos,reloj",
-   "description": "Dos cosas en una complicación.\n\nDuo Slot muestra dos elementos lado a lado en la complicación rectangular grande de tu esfera: pasos y batería, batería y tu próximo evento, y más. Un hueco muestra dos cosas, así los demás quedan libres para otra cosa.\n\n• Elige dos entre Batería, Pasos y Próximo evento\n• Elige la pareja directamente en el editor de esferas, en cualquier orden\n• Toca la mitad izquierda o derecha para abrir ese elemento\n• Los pasos coinciden con el total de Salud, incluidos los contados por el iPhone\n• Próximo evento muestra lo que está en curso o lo siguiente en 36 horas, y cambia justo a tiempo\n• Funciona en cualquier esfera con la complicación rectangular grande, como las Modular\n• Sin cuenta, sin anuncios, sin recopilar datos. Todo se queda en tu dispositivo\n• Si te gusta, puedes invitar un café al desarrollador (opcional; nada cambia)"
+   "description": "Dos cosas en una complicación.\n\nDuo Slot muestra dos elementos lado a lado en la complicación rectangular grande de tu esfera: pasos y batería, batería y tu próximo evento, y más. Un hueco muestra dos cosas, así los demás quedan libres para otra cosa.\n\n• Elige dos entre Batería, Pasos y Próximo evento\n• Elige la pareja directamente en el editor de esferas, en cualquier orden\n• Toca la mitad izquierda o derecha para abrir ese elemento\n• Los pasos coinciden con el total de Salud, incluidos los contados por el iPhone\n• Próximo evento muestra lo que está en curso o lo siguiente en 36 horas, y cambia justo a tiempo\n• Funciona en cualquier esfera con la complicación rectangular grande, como las Modular\n• Sin cuenta, sin anuncios, sin recopilar datos. Todo se queda en tu dispositivo"
   },
   "fr": {
    "name": "Duo Slot",
    "subtitle": "Deux infos, une complication",
    "keywords": "complication,cadran,pas,batterie,calendrier,événement,modulaire,widget,podomètre,deux,montre",
-   "description": "Deux infos dans une complication.\n\nDuo Slot affiche deux éléments côte à côte dans la grande complication rectangulaire de votre cadran : pas et batterie, batterie et prochain événement, et plus. Un emplacement pour deux infos, les autres restent libres.\n\n• Choisissez deux éléments parmi Batterie, Pas et Prochain événement\n• Choisissez la paire directement dans l’éditeur de cadran, dans l’ordre voulu\n• Touchez la moitié gauche ou droite pour ouvrir l’élément\n• Les pas correspondent au total de Santé, y compris ceux comptés par l’iPhone\n• Prochain événement affiche l’événement en cours ou le suivant dans les 36 heures, et change pile à l’heure\n• Fonctionne sur tout cadran doté de la grande complication rectangulaire, comme les cadrans Modulaire\n• Pas de compte, pas de publicité, aucune collecte de données. Tout reste sur votre appareil\n• Si elle vous plaît, vous pouvez offrir un café au développeur (facultatif ; rien ne change)"
+   "description": "Deux infos dans une complication.\n\nDuo Slot affiche deux éléments côte à côte dans la grande complication rectangulaire de votre cadran : pas et batterie, batterie et prochain événement, et plus. Un emplacement pour deux infos, les autres restent libres.\n\n• Choisissez deux éléments parmi Batterie, Pas et Prochain événement\n• Choisissez la paire directement dans l’éditeur de cadran, dans l’ordre voulu\n• Touchez la moitié gauche ou droite pour ouvrir l’élément\n• Les pas correspondent au total de Santé, y compris ceux comptés par l’iPhone\n• Prochain événement affiche l’événement en cours ou le suivant dans les 36 heures, et change pile à l’heure\n• Fonctionne sur tout cadran doté de la grande complication rectangulaire, comme les cadrans Modulaire\n• Pas de compte, pas de publicité, aucune collecte de données. Tout reste sur votre appareil"
   },
   "de": {
    "name": "Duo Slot",
    "subtitle": "Zwei Infos, eine Komplikation",
    "keywords": "Komplikation,Zifferblatt,Schritte,Batterie,Kalender,Termin,Modular,Widget,Schrittzähler,zwei,Uhr",
-   "description": "Zwei Infos in einer Komplikation.\n\nDuo Slot zeigt zwei Dinge nebeneinander in der großen rechteckigen Komplikation deines Zifferblatts: Schritte und Batterie, Batterie und nächster Termin und mehr. Ein Feld zeigt zwei Dinge, die anderen Felder bleiben frei.\n\n• Wähle zwei aus Batterie, Schritte und Nächster Termin\n• Wähle das Paar direkt im Zifferblatt-Editor, in beliebiger Reihenfolge\n• Tippe auf die linke oder rechte Hälfte, um sie zu öffnen\n• Schritte entsprechen der Summe in Health, inklusive der vom iPhone gezählten\n• Nächster Termin zeigt, was gerade läuft oder in den nächsten 36 Stunden kommt, und wechselt pünktlich\n• Funktioniert auf jedem Zifferblatt mit der großen rechteckigen Komplikation, etwa den Modular-Zifferblättern\n• Kein Konto, keine Werbung, keine Datensammlung. Alles bleibt auf deinem Gerät\n• Wenn sie dir gefällt, kannst du dem Entwickler einen Kaffee spendieren (freiwillig; nichts ändert sich)"
+   "description": "Zwei Infos in einer Komplikation.\n\nDuo Slot zeigt zwei Dinge nebeneinander in der großen rechteckigen Komplikation deines Zifferblatts: Schritte und Batterie, Batterie und nächster Termin und mehr. Ein Feld zeigt zwei Dinge, die anderen Felder bleiben frei.\n\n• Wähle zwei aus Batterie, Schritte und Nächster Termin\n• Wähle das Paar direkt im Zifferblatt-Editor, in beliebiger Reihenfolge\n• Tippe auf die linke oder rechte Hälfte, um sie zu öffnen\n• Schritte entsprechen der Summe in Health, inklusive der vom iPhone gezählten\n• Nächster Termin zeigt, was gerade läuft oder in den nächsten 36 Stunden kommt, und wechselt pünktlich\n• Funktioniert auf jedem Zifferblatt mit der großen rechteckigen Komplikation, etwa den Modular-Zifferblättern\n• Kein Konto, keine Werbung, keine Datensammlung. Alles bleibt auf deinem Gerät"
   },
   "it": {
    "name": "Duo Slot",
    "subtitle": "Due cose in una complicazione",
    "keywords": "complicazione,quadrante,passi,batteria,calendario,evento,modulare,widget,contapassi,due,orologio",
-   "description": "Due cose in una complicazione.\n\nDuo Slot mostra due elementi affiancati nella complicazione rettangolare grande del quadrante: passi e batteria, batteria e prossimo evento, e altro. Uno spazio mostra due cose, così gli altri restano liberi.\n\n• Scegli due tra Batteria, Passi e Prossimo evento\n• Scegli la coppia direttamente nell’editor del quadrante, in qualsiasi ordine\n• Tocca la metà sinistra o destra per aprire quell’elemento\n• I passi coincidono con il totale di Salute, inclusi quelli contati dall’iPhone\n• Prossimo evento mostra ciò che è in corso o il successivo entro 36 ore, e cambia puntuale\n• Funziona su qualsiasi quadrante con la complicazione rettangolare grande, come i Modulari\n• Nessun account, nessuna pubblicità, nessuna raccolta di dati. Tutto resta sul dispositivo\n• Se ti piace, puoi offrire un caffè allo sviluppatore (facoltativo; non cambia nulla)"
+   "description": "Due cose in una complicazione.\n\nDuo Slot mostra due elementi affiancati nella complicazione rettangolare grande del quadrante: passi e batteria, batteria e prossimo evento, e altro. Uno spazio mostra due cose, così gli altri restano liberi.\n\n• Scegli due tra Batteria, Passi e Prossimo evento\n• Scegli la coppia direttamente nell’editor del quadrante, in qualsiasi ordine\n• Tocca la metà sinistra o destra per aprire quell’elemento\n• I passi coincidono con il totale di Salute, inclusi quelli contati dall’iPhone\n• Prossimo evento mostra ciò che è in corso o il successivo entro 36 ore, e cambia puntuale\n• Funziona su qualsiasi quadrante con la complicazione rettangolare grande, come i Modulari\n• Nessun account, nessuna pubblicità, nessuna raccolta di dati. Tutto resta sul dispositivo"
   },
   "pt-BR": {
    "name": "Duo Slot",
    "subtitle": "Duas coisas em uma complicação",
    "keywords": "complicação,mostrador,passos,bateria,calendário,evento,modular,widget,pedômetro,duas,relógio",
-   "description": "Duas coisas em uma complicação.\n\nO Duo Slot mostra dois itens lado a lado na complicação retangular grande do mostrador: passos e bateria, bateria e próximo evento, e mais. Um espaço mostra duas coisas, e os outros ficam livres.\n\n• Escolha dois entre Bateria, Passos e Próximo evento\n• Escolha o par direto no editor do mostrador, em qualquer ordem\n• Toque na metade esquerda ou direita para abrir o item\n• Os passos batem com o total do Saúde, incluindo os contados pelo iPhone\n• Próximo evento mostra o que está acontecendo ou o próximo em até 36 horas, e muda na hora certa\n• Funciona em qualquer mostrador com a complicação retangular grande, como os Modulares\n• Sem conta, sem anúncios, sem coleta de dados. Tudo fica no seu dispositivo\n• Se gostar, você pode pagar um café ao desenvolvedor (opcional; nada muda)"
+   "description": "Duas coisas em uma complicação.\n\nO Duo Slot mostra dois itens lado a lado na complicação retangular grande do mostrador: passos e bateria, bateria e próximo evento, e mais. Um espaço mostra duas coisas, e os outros ficam livres.\n\n• Escolha dois entre Bateria, Passos e Próximo evento\n• Escolha o par direto no editor do mostrador, em qualquer ordem\n• Toque na metade esquerda ou direita para abrir o item\n• Os passos batem com o total do Saúde, incluindo os contados pelo iPhone\n• Próximo evento mostra o que está acontecendo ou o próximo em até 36 horas, e muda na hora certa\n• Funciona em qualquer mostrador com a complicação retangular grande, como os Modulares\n• Sem conta, sem anúncios, sem coleta de dados. Tudo fica no seu dispositivo"
   },
   "ru": {
    "name": "Duo Slot",
    "subtitle": "Две вещи в одном расширении",
    "keywords": "расширение,циферблат,шаги,батарея,календарь,событие,модульный,виджет,шагомер,две,часы",
-   "description": "Две вещи в одном расширении.\n\nDuo Slot показывает два элемента рядом в большом прямоугольном расширении циферблата: шаги и батарею, батарею и следующее событие и не только. Одно место — две вещи, а остальные места свободны.\n\n• Выберите два из: Батарея, Шаги, Следующее событие\n• Выбирайте пару прямо в редакторе циферблата, в любом порядке\n• Коснитесь левой или правой половины, чтобы открыть её\n• Шаги совпадают с итогом «Здоровья», включая шаги iPhone\n• Следующее событие — текущее или ближайшее в течение 36 часов; переключается точно вовремя\n• Работает на любом циферблате с большим прямоугольным расширением, например «Модульный»\n• Без аккаунта, без рекламы, без сбора данных. Всё остаётся на устройстве\n• Если понравится, можно угостить разработчика кофе (по желанию; ничего не меняется)"
+   "description": "Две вещи в одном расширении.\n\nDuo Slot показывает два элемента рядом в большом прямоугольном расширении циферблата: шаги и батарею, батарею и следующее событие и не только. Одно место — две вещи, а остальные места свободны.\n\n• Выберите два из: Батарея, Шаги, Следующее событие\n• Выбирайте пару прямо в редакторе циферблата, в любом порядке\n• Коснитесь левой или правой половины, чтобы открыть её\n• Шаги совпадают с итогом «Здоровья», включая шаги iPhone\n• Следующее событие — текущее или ближайшее в течение 36 часов; переключается точно вовремя\n• Работает на любом циферблате с большим прямоугольным расширением, например «Модульный»\n• Без аккаунта, без рекламы, без сбора данных. Всё остаётся на устройстве"
   },
   "ar": {
    "name": "Duo Slot",
    "subtitle": "شيئان في إضافة واحدة",
    "keywords": "إضافة,واجهة الساعة,خطوات,بطارية,تقويم,حدث,معياري,أداة,عداد خطوات,اثنان,ساعة",
-   "description": "شيئان في إضافة واحدة.\n\nيعرض Duo Slot عنصرين جنبًا إلى جنب في الإضافة المستطيلة الكبيرة على واجهة ساعتك: الخطوات والبطارية، أو البطارية وحدثك التالي، وغير ذلك. خانة واحدة تعرض شيئين، فتبقى الخانات الأخرى متاحة لشيء آخر.\n\n• اختر أي اثنين من البطارية والخطوات والحدث التالي\n• اختر الزوج مباشرة من محرر واجهة الساعة، بأي ترتيب\n• اضغط على النصف الأيسر أو الأيمن لفتح ذلك العنصر\n• الخطوات تطابق إجمالي تطبيق الصحة، بما فيها خطوات iPhone\n• الحدث التالي يعرض ما يجري الآن أو التالي خلال 36 ساعة، ويتبدل في موعده تمامًا\n• يعمل على أي واجهة فيها الإضافة المستطيلة الكبيرة، مثل الواجهات المعيارية\n• بلا حساب ولا إعلانات ولا جمع بيانات. كل شيء يبقى على جهازك\n• إن أعجبك، يمكنك أن تشتري للمطوّر قهوة (اختياري؛ لا يتغير شيء)"
+   "description": "شيئان في إضافة واحدة.\n\nيعرض Duo Slot عنصرين جنبًا إلى جنب في الإضافة المستطيلة الكبيرة على واجهة ساعتك: الخطوات والبطارية، أو البطارية وحدثك التالي، وغير ذلك. خانة واحدة تعرض شيئين، فتبقى الخانات الأخرى متاحة لشيء آخر.\n\n• اختر أي اثنين من البطارية والخطوات والحدث التالي\n• اختر الزوج مباشرة من محرر واجهة الساعة، بأي ترتيب\n• اضغط على النصف الأيسر أو الأيمن لفتح ذلك العنصر\n• الخطوات تطابق إجمالي تطبيق الصحة، بما فيها خطوات iPhone\n• الحدث التالي يعرض ما يجري الآن أو التالي خلال 36 ساعة، ويتبدل في موعده تمامًا\n• يعمل على أي واجهة فيها الإضافة المستطيلة الكبيرة، مثل الواجهات المعيارية\n• بلا حساب ولا إعلانات ولا جمع بيانات. كل شيء يبقى على جهازك"
   },
   "nl": {
    "name": "Duo Slot",
    "subtitle": "Twee dingen in één complicatie",
    "keywords": "complicatie,wijzerplaat,stappen,batterij,agenda,afspraak,modulair,widget,stappenteller,twee,horloge",
-   "description": "Twee dingen in één complicatie.\n\nDuo Slot toont twee dingen naast elkaar in de grote rechthoekige complicatie van je wijzerplaat: stappen en batterij, batterij en je volgende afspraak, en meer. Eén vak toont twee dingen, zodat je andere vakken vrij blijven.\n\n• Kies er twee uit Batterij, Stappen en Volgende afspraak\n• Kies het paar direct in de wijzerplaateditor, in elke volgorde\n• Tik op de linker- of rechterhelft om die te openen\n• Stappen komen overeen met het totaal in Gezondheid, inclusief stappen van je iPhone\n• Volgende afspraak toont wat nu bezig is of binnen 36 uur komt, en wisselt precies op tijd\n• Werkt op elke wijzerplaat met de grote rechthoekige complicatie, zoals de Modulair-wijzerplaten\n• Geen account, geen advertenties, geen gegevensverzameling. Alles blijft op je apparaat\n• Vind je het leuk, dan kun je de ontwikkelaar op koffie trakteren (vrijwillig; er verandert niets)"
+   "description": "Twee dingen in één complicatie.\n\nDuo Slot toont twee dingen naast elkaar in de grote rechthoekige complicatie van je wijzerplaat: stappen en batterij, batterij en je volgende afspraak, en meer. Eén vak toont twee dingen, zodat je andere vakken vrij blijven.\n\n• Kies er twee uit Batterij, Stappen en Volgende afspraak\n• Kies het paar direct in de wijzerplaateditor, in elke volgorde\n• Tik op de linker- of rechterhelft om die te openen\n• Stappen komen overeen met het totaal in Gezondheid, inclusief stappen van je iPhone\n• Volgende afspraak toont wat nu bezig is of binnen 36 uur komt, en wisselt precies op tijd\n• Werkt op elke wijzerplaat met de grote rechthoekige complicatie, zoals de Modulair-wijzerplaten\n• Geen account, geen advertenties, geen gegevensverzameling. Alles blijft op je apparaat"
   },
   "sv": {
    "name": "Duo Slot",
    "subtitle": "Två saker i en komplikation",
    "keywords": "komplikation,urtavla,steg,batteri,kalender,händelse,modulär,widget,stegräknare,två,klocka",
-   "description": "Två saker i en komplikation.\n\nDuo Slot visar två saker sida vid sida i den stora rektangulära komplikationen på urtavlan: steg och batteri, batteri och nästa händelse med mera. En plats visar två saker, så de andra platserna blir lediga.\n\n• Välj två av Batteri, Steg och Nästa händelse\n• Välj paret direkt i urtavleredigeraren, i valfri ordning\n• Tryck på vänster eller höger halva för att öppna den\n• Stegen stämmer med summan i Hälsa, även steg som iPhone räknat\n• Nästa händelse visar det som pågår eller nästa inom 36 timmar och byter exakt i tid\n• Fungerar på alla urtavlor med den stora rektangulära komplikationen, som de modulära\n• Inget konto, ingen reklam, ingen datainsamling. Allt stannar på din enhet\n• Om du gillar den kan du bjuda utvecklaren på en kaffe (frivilligt; inget ändras)"
+   "description": "Två saker i en komplikation.\n\nDuo Slot visar två saker sida vid sida i den stora rektangulära komplikationen på urtavlan: steg och batteri, batteri och nästa händelse med mera. En plats visar två saker, så de andra platserna blir lediga.\n\n• Välj två av Batteri, Steg och Nästa händelse\n• Välj paret direkt i urtavleredigeraren, i valfri ordning\n• Tryck på vänster eller höger halva för att öppna den\n• Stegen stämmer med summan i Hälsa, även steg som iPhone räknat\n• Nästa händelse visar det som pågår eller nästa inom 36 timmar och byter exakt i tid\n• Fungerar på alla urtavlor med den stora rektangulära komplikationen, som de modulära\n• Inget konto, ingen reklam, ingen datainsamling. Allt stannar på din enhet"
   },
   "tr": {
    "name": "Duo Slot",
    "subtitle": "Tek komplikasyonda iki şey",
    "keywords": "komplikasyon,saat kadranı,adım,pil,takvim,etkinlik,modüler,widget,adımsayar,iki,saat",
-   "description": "Tek komplikasyonda iki şey.\n\nDuo Slot, saat kadranınızdaki büyük dikdörtgen komplikasyonda iki öğeyi yan yana gösterir: adım ve pil, pil ve sonraki etkinlik ve daha fazlası. Tek alan iki şey gösterir, diğer alanlar başka şeylere kalır.\n\n• Pil, Adım ve Sonraki etkinlik arasından ikisini seçin\n• Çifti doğrudan kadran düzenleyicide, istediğiniz sırayla seçin\n• Açmak için sol ya da sağ yarıya dokunun\n• Adımlar, iPhone'un saydıkları dahil Sağlık toplamıyla aynıdır\n• Sonraki etkinlik, şu an süreni ya da 36 saat içindeki sıradakini gösterir ve tam zamanında değişir\n• Modüler kadranlar gibi büyük dikdörtgen komplikasyonu olan her kadranda çalışır\n• Hesap yok, reklam yok, veri toplama yok. Her şey cihazınızda kalır\n• Beğendiyseniz geliştiriciye bir kahve ısmarlayabilirsiniz (isteğe bağlı; hiçbir şey değişmez)"
+   "description": "Tek komplikasyonda iki şey.\n\nDuo Slot, saat kadranınızdaki büyük dikdörtgen komplikasyonda iki öğeyi yan yana gösterir: adım ve pil, pil ve sonraki etkinlik ve daha fazlası. Tek alan iki şey gösterir, diğer alanlar başka şeylere kalır.\n\n• Pil, Adım ve Sonraki etkinlik arasından ikisini seçin\n• Çifti doğrudan kadran düzenleyicide, istediğiniz sırayla seçin\n• Açmak için sol ya da sağ yarıya dokunun\n• Adımlar, iPhone'un saydıkları dahil Sağlık toplamıyla aynıdır\n• Sonraki etkinlik, şu an süreni ya da 36 saat içindeki sıradakini gösterir ve tam zamanında değişir\n• Modüler kadranlar gibi büyük dikdörtgen komplikasyonu olan her kadranda çalışır\n• Hesap yok, reklam yok, veri toplama yok. Her şey cihazınızda kalır"
   },
   "id": {
    "name": "Duo Slot",
    "subtitle": "Dua hal dalam satu komplikasi",
    "keywords": "komplikasi,tampilan jam,langkah,baterai,kalender,acara,modular,widget,pedometer,dua,jam",
-   "description": "Dua hal dalam satu komplikasi.\n\nDuo Slot menampilkan dua item berdampingan di komplikasi persegi panjang besar pada tampilan jam Anda: langkah dan baterai, baterai dan acara berikutnya, dan lainnya. Satu slot menampilkan dua hal, sehingga slot lain bisa dipakai untuk yang lain.\n\n• Pilih dua dari Baterai, Langkah, dan Acara berikutnya\n• Pilih pasangannya langsung di editor tampilan jam, dengan urutan bebas\n• Ketuk separuh kiri atau kanan untuk membukanya\n• Langkah sama dengan total di Kesehatan, termasuk langkah dari iPhone\n• Acara berikutnya menampilkan yang sedang berlangsung atau berikutnya dalam 36 jam, dan berganti tepat waktu\n• Berfungsi di tampilan jam mana pun yang punya komplikasi persegi panjang besar, seperti tampilan Modular\n• Tanpa akun, tanpa iklan, tanpa pengumpulan data. Semuanya tetap di perangkat Anda\n• Kalau suka, Anda bisa mentraktir pengembang kopi (opsional; tidak ada yang berubah)"
-  }
- },
- "tip": {
-  "_comment": "投げ銭（コーヒー1杯）。表示名30文字・説明55文字まで。『寄付』『Donation』とは書かない",
-  "productId": "com.zzzjjj080.DuoSlot.coffee",
-  "referenceName": "DuoSlot Coffee",
-  "reviewNote": "A tip. The app does not change in any way after the purchase. It is offered in the Apple Watch app (\"Buy me a coffee\" row in the main list) and in the iPhone app (bottom of the main screen).",
-  "text": {
-   "ja": {
-    "name": "コーヒー1杯",
-    "description": "開発者にコーヒーを1杯。アプリの機能は変わりません。"
-   },
-   "en": {
-    "name": "A cup of coffee",
-    "description": "Buy the developer a coffee. Nothing in the app changes."
-   },
-   "zh-Hans": {
-    "name": "一杯咖啡",
-    "description": "请开发者喝杯咖啡。应用功能不会改变。"
-   },
-   "zh-Hant": {
-    "name": "一杯咖啡",
-    "description": "請開發者喝杯咖啡。App 功能不會改變。"
-   },
-   "ko": {
-    "name": "커피 한 잔",
-    "description": "개발자에게 커피 한 잔. 앱 기능은 달라지지 않습니다."
-   },
-   "es": {
-    "name": "Un café",
-    "description": "Invita un café al desarrollador. La app no cambia."
-   },
-   "fr": {
-    "name": "Un café",
-    "description": "Offrez un café au développeur. L'app ne change pas."
-   },
-   "de": {
-    "name": "Ein Kaffee",
-    "description": "Ein Kaffee für den Entwickler. Die App bleibt gleich"
-   },
-   "it": {
-    "name": "Un caffè",
-    "description": "Offri un caffè allo sviluppatore. L'app non cambia."
-   },
-   "pt-BR": {
-    "name": "Um café",
-    "description": "Pague um café ao desenvolvedor. O app não muda."
-   },
-   "ru": {
-    "name": "Чашка кофе",
-    "description": "Угостите разработчика кофе. Приложение не меняется."
-   },
-   "ar": {
-    "name": "فنجان قهوة",
-    "description": "اشترِ للمطوّر فنجان قهوة. لا يتغير شيء في التطبيق."
-   },
-   "nl": {
-    "name": "Een kop koffie",
-    "description": "Trakteer de ontwikkelaar op koffie. Er verandert niets."
-   },
-   "sv": {
-    "name": "En kopp kaffe",
-    "description": "Bjud utvecklaren på kaffe. Inget i appen ändras."
-   },
-   "tr": {
-    "name": "Bir fincan kahve",
-    "description": "Geliştiriciye bir kahve ısmarlayın. Uygulama değişmez."
-   },
-   "id": {
-    "name": "Secangkir kopi",
-    "description": "Traktir pengembang kopi. Tidak ada yang berubah."
-   }
+   "description": "Dua hal dalam satu komplikasi.\n\nDuo Slot menampilkan dua item berdampingan di komplikasi persegi panjang besar pada tampilan jam Anda: langkah dan baterai, baterai dan acara berikutnya, dan lainnya. Satu slot menampilkan dua hal, sehingga slot lain bisa dipakai untuk yang lain.\n\n• Pilih dua dari Baterai, Langkah, dan Acara berikutnya\n• Pilih pasangannya langsung di editor tampilan jam, dengan urutan bebas\n• Ketuk separuh kiri atau kanan untuk membukanya\n• Langkah sama dengan total di Kesehatan, termasuk langkah dari iPhone\n• Acara berikutnya menampilkan yang sedang berlangsung atau berikutnya dalam 36 jam, dan berganti tepat waktu\n• Berfungsi di tampilan jam mana pun yang punya komplikasi persegi panjang besar, seperti tampilan Modular\n• Tanpa akun, tanpa iklan, tanpa pengumpulan data. Semuanya tetap di perangkat Anda"
   }
  }
 }

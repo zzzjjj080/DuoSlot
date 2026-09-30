@@ -16,7 +16,7 @@ VER = "d34f7515-9c5c-4c82-8e89-fa3e6721ed67"
 src_ver = asc("get", "/v1/apps/6811255797/appStoreVersions?limit=1")["data"][0]["id"]
 c = asc("get", f"/v1/appStoreVersions/{src_ver}/appStoreReviewDetail")["data"]["attributes"]
 NOTES = """[English]
-Duo Slot is an Apple Watch app. Its main feature is a watch-face complication (accessoryRectangular) that shows two items side by side: any two of Battery, Steps and Next Event. The iPhone app only explains how to set it up and offers the optional tip.
+Duo Slot is an Apple Watch app. Its main feature is a watch-face complication (accessoryRectangular) that shows two items side by side: any two of Battery, Steps and Next Event. The iPhone app only explains how to set it up.
 
 How to review:
 1. Install on an iPhone paired with an Apple Watch. Open "Duo Slot" on the Apple Watch once and allow Health (steps), Motion and Calendar access.
@@ -26,14 +26,12 @@ How to review:
 Notes:
 - If a permission is declined, that half shows "No access" (calendar) or "--" (steps). Nothing else changes.
 - Next Event shows the current event or the next timed event within 36 hours; all-day events are not shown. With no events it shows "No events".
-- No account, no server. All data is read on the device and never leaves it.
-- In-app purchase "A cup of coffee" (consumable tip): Apple Watch app > "Buy me a coffee" row in the main list, or the bottom of the iPhone app. It unlocks nothing; every feature is free.
+- No account, no server, no in-app purchases. The app does not connect to the internet; all data is read on the device and never leaves it.
 
 [日本語]
-Apple Watch のアプリです。主な機能は文字盤のコンプリケーション（大きい四角）で、電池・歩数・次の予定から2つを左右に並べて出します。iPhone のアプリは置き方の説明と、任意の投げ銭だけです。
+Apple Watch のアプリです。主な機能は文字盤のコンプリケーション（大きい四角）で、電池・歩数・次の予定から2つを左右に並べて出します。iPhone のアプリは置き方の説明だけです。
 確認手順：Watch で Duo Slot を一度開いて許可 → 文字盤を長押し →「編集」→ 大きい四角 → Duo Slot →「歩数 | 電池」などを選ぶ → 左半分・右半分を押すと、それぞれの画面が開きます。
-許可を断った項目は「許可なし」「--」と出るだけです。通信はせず、情報は端末の外へ出ません。
-投げ銭「コーヒー1杯」は Watch の一覧の「コーヒーを奢る」、または iPhone の画面の下から。購入しても機能は変わりません。"""
+許可を断った項目は「許可なし」「--」と出るだけです。課金はありません。通信はせず、情報は端末の外へ出ません。"""
 print("メモの字数", len(NOTES))
 assert len(NOTES) <= 4000
 attrs = {"contactFirstName": c["contactFirstName"], "contactLastName": c["contactLastName"],

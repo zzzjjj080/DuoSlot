@@ -20,7 +20,7 @@ echo "→ 上げる前の点検"
 echo "   版 $(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$A/Info.plist") ($(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$A/Info.plist"))・Watch ($(/usr/libexec/PlistBuddy -c 'Print CFBundleVersion' "$W/Info.plist"))"
 printf "   拡張: "; ls "$W/PlugIns"
 printf "   App Group・HealthKit: "; codesign -d --entitlements :- "$W" 2>/dev/null | grep -cE "group.com.zzzjjj080.DuoSlot|healthkit"
-printf "   撮影モードの入口（0 であること）: "; strings "$W/DuoSlot Watch App" | grep -cE "DS_SHOT|DS_TIP_SAMPLE" || true
+printf "   撮影モードの入口（0 であること）: "; strings "$W/DuoSlot Watch App" | grep -cE "DS_SHOT" || true
 printf "   .storekit（0 であること）: "; find "$A" -name "*.storekit" | wc -l
 
 if [ "${2:-}" = "--archive-only" ]; then echo "✅ アーカイブまで"; exit 0; fi

@@ -9,7 +9,6 @@ import UniformTypeIdentifiers
 //   swift Tools-MakeScreenshots.swift
 //   → store/phone-<名前>.png（日本語）・store/en/phone-<名前>.png（英語）・store/65/… と store/en/65/…（6.5インチ）
 //   → store/watch-<名前>.png・store/en/watch-<名前>.png（Watch の枠へそのまま）
-//   → store/tip-review.png（投げ銭の審査用）
 
 let root = "/Users/jin/Claude/DuoSlot/store/"
 let shots = ["face1", "face2", "face3", "steps"]
@@ -17,13 +16,11 @@ let captions: [String: [String: (String, String)]] = [
     "ja": ["face1": ("1つの枠に、2つ。", "文字盤の大きい四角に、左右で別々のもの"),
            "face2": ("電池と、次の予定。", "電池・歩数・次の予定から2つ選べます"),
            "face3": ("組み合わせは自由。", "文字盤の編集画面で選ぶだけ。左右の順も"),
-           "steps": ("押した側が開く。", "左を押せば左、右を押せば右の画面"),
-           "tip":   ("コーヒーを奢る", "任意の投げ銭。送っても機能は変わりません")],
+           "steps": ("押した側が開く。", "左を押せば左、右を押せば右の画面")],
     "en": ["face1": ("Two in one slot.", "Two different things in the large rectangle"),
            "face2": ("Battery and next event.", "Pick any two: Battery, Steps, Next Event"),
            "face3": ("Any pair, any order.", "Choose it right in the watch face editor"),
-           "steps": ("Tap a side to open it.", "Left opens left, right opens right"),
-           "tip":   ("Buy me a coffee", "An optional tip. Nothing in the app changes")],
+           "steps": ("Tap a side to open it.", "Left opens left, right opens right")],
 ]
 
 func color(_ hex: UInt32) -> NSColor {
@@ -86,5 +83,4 @@ for lang in ["ja", "en"] {
         try! FileManager.default.copyItem(atPath: root + "raw/\(lang)-\(name).png", toPath: dir + "watch-\(name).png")
     }
 }
-compose(lang: "ja", name: "tip", width: 1320, height: 2868, out: root + "tip-review.png")
 print("done")

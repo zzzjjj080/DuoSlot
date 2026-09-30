@@ -3,8 +3,6 @@ import SwiftUI
 /// Watch アプリを届けるための器（watchOS 単体は App Store に出せない。4-91）
 @main
 struct DuoPhoneApp: App {
-    @State private var tipJar = TipJar(productID: TipJar.duoSlot)
-
     var body: some Scene {
         WindowGroup {
             NavigationStack {
@@ -15,7 +13,13 @@ struct DuoPhoneApp: App {
                         Text("3. 左右の組み合わせ（例：歩数｜電池）を選ぶ")
                     }
                     Section { Text("文字盤で左右を押すと、押した側の画面が Watch で開きます。") }
-                    Section { TipView(tipJar: tipJar) {} }
+                    Section {
+                        // 投げ銭の代わり。控えめな1行（2026-09-30 本人判断で投げ銭は廃止）
+                        Link(destination: URL(string: "https://apps.apple.com/jp/developer/jin-nakamura/id6802013586")!) {
+                            Label("作者の他のアプリ", systemImage: "square.grid.2x2")
+                                .font(.footnote)
+                        }
+                    }
                     Text(verbatim: stamp).font(.footnote).foregroundStyle(.secondary)
                 }
                 .navigationTitle(Text(verbatim: "Duo Slot"))

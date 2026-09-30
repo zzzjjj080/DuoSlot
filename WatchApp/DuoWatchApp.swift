@@ -20,8 +20,6 @@ struct RootView: View {
     @State private var snapshot = Snapshot(battery: BatteryReading(level: nil, charging: false), steps: nil, events: nil)
     @State private var path: [Slot] = []
     @State private var lastShown: String?
-    @State private var showTip = false
-    @State private var tipJar = TipJar(productID: TipJar.duoSlot)
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -35,14 +33,10 @@ struct RootView: View {
                 ForEach(Slot.allCases) { slot in
                     NavigationLink(value: slot) { Label(slot.title, systemImage: slot.symbol) }
                 }
-                Button { showTip = true } label: {
-                    Label("コーヒーを奢る", systemImage: "heart")
-                }
                 Text(verbatim: Stamp.text).font(.system(size: 10)).foregroundStyle(.secondary)
             }
             .navigationTitle(Text(verbatim: "Duo Slot"))
             .navigationDestination(for: Slot.self) { DetailView(slot: $0, snapshot: snapshot) }
-            .sheet(isPresented: $showTip) { TipView(tipJar: tipJar) { showTip = false } }
         }
         .task { await firstLaunch() }
         .onOpenURL { url in
@@ -125,7 +119,7 @@ enum Stamp {
 /// ストア用の撮影モード。**DEBUG 構成にしか無い**。`SIMCTL_CHILD_DS_SHOT=face1` などで起動する。
 /// 数字は見本（歩数 8,432・電池 82%・予定は2時間後）。許可のダイアログは出さない
 enum Shot: String {
-    case face1, face2, face3, list, steps, tip
+    case face1, face2, face3, list, steps
 
     static var current: Shot? { ProcessInfo.processInfo.environment["DS_SHOT"].flatMap(Shot.init) }
 
@@ -142,7 +136,6 @@ enum Shot: String {
 
 struct ShotView: View {
     let shot: Shot
-    @State private var tipJar = TipJar(productID: TipJar.duoSlot)
 
     var body: some View {
         switch shot {
@@ -160,7 +153,6 @@ struct ShotView: View {
                 .navigationTitle(Text(verbatim: "Duo Slot"))
             }
         case .steps: NavigationStack { DetailView(slot: .steps, snapshot: Shot.sample) }
-        case .tip: TipView(tipJar: tipJar) {}
         }
     }
 }

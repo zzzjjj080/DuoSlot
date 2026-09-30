@@ -20,7 +20,7 @@ targets:
   DuoSlot:
     type: application
     platform: iOS
-    sources: [Phone, Tip]
+    sources: [Phone]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot
@@ -41,7 +41,7 @@ targets:
   DuoSlotWatch:
     type: application
     platform: watchOS
-    sources: [WatchApp, Shared, Tip]
+    sources: [WatchApp, Shared]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.zzzjjj080.DuoSlot.watchkitapp
